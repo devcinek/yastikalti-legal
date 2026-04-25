@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yastık Altı — Yasal Belgeler / Legal Documents</title>
+  <style>
+:root {
+  color-scheme: light dark;
+  --bg: #FAF7F0;
+  --bg-card: #FFFFFF;
+  --text: #1F2937;
+  --text-muted: #6B7280;
+  --green-dark: #1E563F;
+  --green-light: #2D7A5F;
+  --gold: #C4A94D;
+  --border: #E5E1D6;
+  --code-bg: #F3EFE4;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0F1410;
+    --bg-card: #1A201C;
+    --text: #F2F0EA;
+    --text-muted: #A39F94;
+    --green-dark: #4FA37D;
+    --green-light: #6BBF99;
+    --gold: #D4BC68;
+    --border: #2A302C;
+    --code-bg: #232925;
+  }
+}
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-text-size-adjust: 100%;
+}
+.container {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 20px 80px 20px;
+}
+h1, h2, h3, h4 {
+  font-family: "New York", "Times New Roman", "Georgia", serif;
+  color: var(--green-dark);
+  font-weight: 700;
+  line-height: 1.25;
+  margin-top: 1.6em;
+  margin-bottom: 0.5em;
+}
+h1 {
+  font-size: 28px;
+  border-bottom: 3px solid var(--gold);
+  padding-bottom: 12px;
+  margin-top: 0;
+  text-align: center;
+}
+h2 {
+  font-size: 22px;
+  margin-top: 2em;
+}
+h3 {
+  font-size: 18px;
+  color: var(--green-light);
+}
+h4 {
+  font-size: 16px;
+  color: var(--text);
+}
+p {
+  margin: 0.6em 0;
+}
+strong {
+  color: var(--green-dark);
+  font-weight: 600;
+}
+em { color: var(--text-muted); }
+a {
+  color: var(--green-light);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+a:hover { color: var(--gold); }
+ul, ol { padding-left: 1.4em; }
+li { margin: 0.25em 0; }
+li::marker { color: var(--gold); }
+
+blockquote {
+  border-left: 4px solid var(--gold);
+  background: var(--bg-card);
+  padding: 14px 18px;
+  margin: 1.2em 0;
+  border-radius: 0 10px 10px 0;
+  color: var(--text);
+  font-style: normal;
+}
+blockquote p { margin: 0.4em 0; }
+
+code {
+  background: var(--code-bg);
+  border-radius: 6px;
+  padding: 2px 6px;
+  font-family: "SF Mono", "Menlo", "Monaco", monospace;
+  font-size: 0.9em;
+  color: var(--green-dark);
+}
+pre {
+  background: var(--code-bg);
+  border-radius: 10px;
+  padding: 14px;
+  overflow-x: auto;
+}
+pre code {
+  background: transparent;
+  padding: 0;
+  color: var(--text);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+  font-size: 14.5px;
+  background: var(--bg-card);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 0 var(--border);
+}
+th, td {
+  border: 1px solid var(--border);
+  padding: 10px 12px;
+  text-align: left;
+  vertical-align: top;
+}
+th {
+  background: var(--code-bg);
+  color: var(--green-dark);
+  font-weight: 700;
+  font-family: "New York", "Georgia", serif;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2em 0;
+}
+
+.meta {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 13px;
+  margin-top: -6px;
+  margin-bottom: 24px;
+}
+
+.footer {
+  margin-top: 48px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 13px;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .container { padding: 20px 14px 60px 14px; }
+  h1 { font-size: 24px; }
+  h2 { font-size: 19px; }
+  h3 { font-size: 17px; }
+  body { font-size: 15.5px; }
+  table { font-size: 13.5px; }
+  th, td { padding: 8px 10px; }
+}
+
+  .doc-grid { display: grid; gap: 12px; margin: 24px 0; }
+  .doc-link {
+    display: block;
+    padding: 18px 20px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--text);
+    transition: border-color 0.15s, transform 0.15s;
+  }
+  .doc-link:hover { border-color: var(--gold); transform: translateY(-1px); color: var(--text); }
+  .doc-link strong { display: block; color: var(--green-dark); font-family: "New York", Georgia, serif; font-size: 17px; }
+  .doc-link span { color: var(--text-muted); font-size: 13px; }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <h1>Yastık Altı</h1>
+    <p class="meta">Yasal Belgeler · Legal Documents</p>
+    <div class="doc-grid">
+      <a class="doc-link" href="terms-tr.html"><strong>Kullanım Koşulları</strong><span>Türkçe sürüm</span></a>
+      <a class="doc-link" href="terms-en.html"><strong>Terms of Use</strong><span>English version</span></a>
+      <a class="doc-link" href="privacy-tr.html"><strong>Gizlilik Politikası</strong><span>Türkçe sürüm</span></a>
+      <a class="doc-link" href="privacy-en.html"><strong>Privacy Policy</strong><span>English version</span></a>
+    </div>
+    <p class="footer">© 2026 Doğan Cinek — Yastık Altı · dogidem.is.here@gmail.com</p>
+  </main>
+</body>
+</html>
