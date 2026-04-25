@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <title>Yastık Altı — Kullanım Koşulları</title>
+  <style>
+:root {
+  color-scheme: light dark;
+  --bg: #FAF7F0;
+  --bg-card: #FFFFFF;
+  --text: #1F2937;
+  --text-muted: #6B7280;
+  --green-dark: #1E563F;
+  --green-light: #2D7A5F;
+  --gold: #C4A94D;
+  --border: #E5E1D6;
+  --code-bg: #F3EFE4;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0F1410;
+    --bg-card: #1A201C;
+    --text: #F2F0EA;
+    --text-muted: #A39F94;
+    --green-dark: #4FA37D;
+    --green-light: #6BBF99;
+    --gold: #D4BC68;
+    --border: #2A302C;
+    --code-bg: #232925;
+  }
+}
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-text-size-adjust: 100%;
+}
+.container {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 20px 80px 20px;
+}
+h1, h2, h3, h4 {
+  font-family: "New York", "Times New Roman", "Georgia", serif;
+  color: var(--green-dark);
+  font-weight: 700;
+  line-height: 1.25;
+  margin-top: 1.6em;
+  margin-bottom: 0.5em;
+}
+h1 {
+  font-size: 28px;
+  border-bottom: 3px solid var(--gold);
+  padding-bottom: 12px;
+  margin-top: 0;
+  text-align: center;
+}
+h2 {
+  font-size: 22px;
+  margin-top: 2em;
+}
+h3 {
+  font-size: 18px;
+  color: var(--green-light);
+}
+h4 {
+  font-size: 16px;
+  color: var(--text);
+}
+p {
+  margin: 0.6em 0;
+}
+strong {
+  color: var(--green-dark);
+  font-weight: 600;
+}
+em { color: var(--text-muted); }
+a {
+  color: var(--green-light);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+a:hover { color: var(--gold); }
+ul, ol { padding-left: 1.4em; }
+li { margin: 0.25em 0; }
+li::marker { color: var(--gold); }
+
+blockquote {
+  border-left: 4px solid var(--gold);
+  background: var(--bg-card);
+  padding: 14px 18px;
+  margin: 1.2em 0;
+  border-radius: 0 10px 10px 0;
+  color: var(--text);
+  font-style: normal;
+}
+blockquote p { margin: 0.4em 0; }
+
+code {
+  background: var(--code-bg);
+  border-radius: 6px;
+  padding: 2px 6px;
+  font-family: "SF Mono", "Menlo", "Monaco", monospace;
+  font-size: 0.9em;
+  color: var(--green-dark);
+}
+pre {
+  background: var(--code-bg);
+  border-radius: 10px;
+  padding: 14px;
+  overflow-x: auto;
+}
+pre code {
+  background: transparent;
+  padding: 0;
+  color: var(--text);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+  font-size: 14.5px;
+  background: var(--bg-card);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 0 var(--border);
+}
+th, td {
+  border: 1px solid var(--border);
+  padding: 10px 12px;
+  text-align: left;
+  vertical-align: top;
+}
+th {
+  background: var(--code-bg);
+  color: var(--green-dark);
+  font-weight: 700;
+  font-family: "New York", "Georgia", serif;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2em 0;
+}
+
+.meta {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 13px;
+  margin-top: -6px;
+  margin-bottom: 24px;
+}
+
+.footer {
+  margin-top: 48px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 13px;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .container { padding: 20px 14px 60px 14px; }
+  h1 { font-size: 24px; }
+  h2 { font-size: 19px; }
+  h3 { font-size: 17px; }
+  body { font-size: 15.5px; }
+  table { font-size: 13.5px; }
+  th, td { padding: 8px 10px; }
+}
+</style>
+</head>
+<body>
+  <main class="container">
+    <h1>YASTIK ALTI — KULLANIM KOŞULLARI</h1>
+<p><strong>Yürürlük Tarihi:</strong> 25 Nisan 2026
+<strong>Son Güncelleme:</strong> 25 Nisan 2026
+<strong>Sürüm:</strong> 1.0</p>
+<hr />
+<h2>1. TARAFLAR VE KAPSAM</h2>
+<h3>1.1. Sözleşmenin Tarafları</h3>
+<p>İşbu Kullanım Koşulları ("<strong>Koşullar</strong>" veya "<strong>Sözleşme</strong>"), bir tarafta merkezi Türkiye Cumhuriyeti'nde bulunan <strong>Doğan Cinek</strong> ("<strong>Geliştirici</strong>", "<strong>biz</strong>", "<strong>bize</strong>" veya "<strong>bizim</strong>") ile diğer tarafta <strong>Yastık Altı</strong> mobil uygulamasını ("<strong>Uygulama</strong>" veya "<strong>Hizmet</strong>") indiren, kuran, kayıt olan veya herhangi bir şekilde kullanan gerçek veya tüzel kişi ("<strong>Kullanıcı</strong>", "<strong>siz</strong>" veya "<strong>sizin</strong>") arasında akdedilmiştir.</p>
+<h3>1.2. Sözleşmenin Kabulü</h3>
+<p>Uygulamayı indirdiğinizde, kurduğunuzda, açtığınızda, hesap oluşturduğunuzda veya başka herhangi bir şekilde kullandığınızda, işbu Koşulları okuduğunuzu, anladığınızı ve <strong>bağlayıcı bir sözleşme olarak kabul ettiğinizi</strong> beyan etmiş olursunuz. Koşulları kabul etmiyorsanız, lütfen Uygulamayı <strong>kullanmayın, kurmayın ve cihazınızdan kaldırın.</strong></p>
+<h3>1.3. Apple End User License Agreement (EULA)</h3>
+<p>İşbu Koşullar, Apple Inc.'in App Store üzerinden dağıtılan uygulamalar için geçerli olan Standart Son Kullanıcı Lisans Sözleşmesi'ni (https://www.apple.com/legal/internet-services/itunes/dev/stdeula/) <strong>tamamlar ve referans alır</strong>. Apple EULA ile işbu Koşullar arasında bir çelişki olması halinde, Apple EULA'nın daha kısıtlayıcı hükümleri öncelikli olarak uygulanır.</p>
+<h3>1.4. Yaş Sınırı</h3>
+<p>Uygulamayı kullanabilmek için <strong>en az 13 (on üç) yaşında</strong> olmanız ve bulunduğunuz ülkenin geçerli yasaları çerçevesinde işbu Koşulları kabul etme ehliyetine sahip olmanız gerekmektedir. 18 yaşın altındaysanız, Uygulamayı kullanmadan önce ebeveyninizden veya yasal vasinizden izin almalısınız. Geliştirici, makul olarak çocuk olduğunu öğrendiği herhangi bir kullanıcının hesabını ve verilerini önceden bildirimde bulunmaksızın silme hakkını saklı tutar.</p>
+<hr />
+<h2>2. UYGULAMANIN AMACI VE FONKSİYONLARI</h2>
+<h3>2.1. Uygulamanın Niteliği</h3>
+<p>Yastık Altı, <strong>fiziki altın ve gümüş yatırımları için kişisel takip ve görselleştirme</strong> amacıyla geliştirilmiş bir mobil uygulamadır. Uygulamanın temel fonksiyonları şunları içerir (ancak bunlarla sınırlı değildir):</p>
+<ul>
+<li>Kullanıcı tarafından girilen altın/gümüş alımlarının kaydedilmesi ve listelenmesi;</li>
+<li>Anlık piyasa verileri (ons fiyatı, döviz kuru) üzerinden portföyün TL ve USD cinsinden değerinin <strong>tahmini olarak</strong> gösterilmesi;</li>
+<li>Tarihsel grafik, fırsat maliyeti hesaplamaları, bütçe simülasyonu ve özet raporlar;</li>
+<li>Hedef tanımlama, fiyat eşik bildirimleri ve günlük/haftalık özet bildirimleri;</li>
+<li>Widget, kilit ekranı widget'ı ve Siri kısayol entegrasyonları.</li>
+</ul>
+<h3>2.2. <strong>YATIRIM TAVSİYESİ DEĞİLDİR — ÖNEMLİ UYARI</strong></h3>
+<blockquote>
+<p><strong>UYGULAMA, SERMAYE PİYASASI KANUNU VE BAĞLI MEVZUAT ÇERÇEVESİNDE YATIRIM DANIŞMANLIĞI HİZMETİ SUNMAMAKTADIR.</strong></p>
+</blockquote>
+<p>Uygulamanın sunduğu hiçbir bilgi, hesaplama, grafik, rapor, fiyat verisi, bildirim veya öneri:</p>
+<ul>
+<li><strong>Yatırım tavsiyesi</strong>, finansal danışmanlık, vergi danışmanlığı veya hukuki danışmanlık olarak yorumlanamaz;</li>
+<li>Bir altın, gümüş, döviz veya başka herhangi bir varlığın <strong>alınması, satılması veya elde tutulması</strong> yönünde bir tavsiye, teşvik veya yönlendirme oluşturmaz;</li>
+<li>Sermaye Piyasası Kurulu (SPK), Türkiye Cumhuriyet Merkez Bankası (TCMB), Bankacılık Düzenleme ve Denetleme Kurumu (BDDK) veya herhangi bir düzenleyici kurum tarafından <strong>lisanslı bir hizmet</strong> olarak sunulmamaktadır;</li>
+<li>Geçmiş performansın <strong>gelecekteki sonuçların göstergesi olduğunu</strong> ima etmez.</li>
+</ul>
+<p>Yatırım kararlarınızı yalnızca lisanslı bir yatırım danışmanı, finansal danışman veya yetkili kuruluştan alacağınız tavsiyelere dayanarak vermeli ve kendi araştırmanızı yapmalısınız. Uygulamada gördüğünüz herhangi bir veriye dayanarak aldığınız hiçbir karardan Geliştirici sorumlu değildir.</p>
+<h3>2.3. Veri Kaynakları ve Doğruluğu</h3>
+<p>Piyasa verileri, döviz kurları ve fiyat bilgileri <strong>üçüncü taraf veri sağlayıcılarından</strong> temin edilmektedir. Bu veriler:</p>
+<ul>
+<li><strong>Bilgilendirme amaçlıdır</strong>, gerçek piyasa fiyatlarından gecikmeli, yanlış veya eksik olabilir;</li>
+<li>Resmi kotasyon, alım-satım emri verme veya finansal işlem yapma amacıyla <strong>kullanılamaz</strong>;</li>
+<li>Anlık olabilmekle birlikte <strong>gecikmeli</strong> ya da kesintiye uğramış olabilir;</li>
+<li>Geliştirici tarafından <strong>doğruluğu, eksiksizliği veya güncelliği garanti edilmez</strong>.</li>
+</ul>
+<p>Uygulama içinde gösterilen kâr/zarar, portföy değeri, hedef ilerlemesi ve benzeri tüm hesaplamalar, kullanıcının manuel olarak girdiği veriler ile üçüncü taraf piyasa verilerinin <strong>otomatik birleşimi</strong> olup, <strong>gerçek piyasa şartlarını yansıtmayabilir</strong>.</p>
+<hr />
+<h2>3. HESAP, KAYIT VE KULLANICI YÜKÜMLÜLÜKLERİ</h2>
+<h3>3.1. Hesap Bilgileri</h3>
+<p>Uygulama, mevcut sürümünde tüm verilerinizi cihazınızda <strong>yerel olarak (SwiftData)</strong> saklar; sunucu tarafı bir kullanıcı hesabı oluşturmazsınız. Cihazınızı kaybetmeniz, sıfırlamanız veya silmeniz halinde verileriniz <strong>geri alınamayabilir</strong>. Verilerinizi düzenli olarak yedeklemek (örn. iCloud yedeği) sizin sorumluluğunuzdadır.</p>
+<h3>3.2. Kullanıcı Tarafından Sağlanan Verilerin Doğruluğu</h3>
+<p>Uygulamaya gireceğiniz tüm işlem bilgilerinin (alım tarihi, gram miktarı, ödenen tutar vb.) <strong>doğruluğu, eksiksizliği ve güncelliği yalnızca size aittir</strong>. Yanlış veri girişinden kaynaklanan hesaplama hataları, hatalı raporlar veya bildirimler Geliştiricinin sorumluluğunda değildir.</p>
+<h3>3.3. Yasaklı Kullanım</h3>
+<p>Uygulamayı şu amaçlarla kullanamazsınız:</p>
+<ul>
+<li>Yürürlükteki herhangi bir yasayı (5237 sayılı Türk Ceza Kanunu, 6362 sayılı Sermaye Piyasası Kanunu, 5549 sayılı Suç Gelirlerinin Aklanmasının Önlenmesi Hakkında Kanun vb. dahil) ihlal etmek;</li>
+<li>Üçüncü tarafların haklarını (fikri mülkiyet, gizlilik, kişilik hakları vb.) ihlal etmek;</li>
+<li>Uygulamanın kaynak kodunu <strong>tersine mühendislik</strong> ile çözmek, kopyalamak, derlenmiş halini değiştirmek, decompile veya disassemble etmek (yürürlükteki yasaların açıkça izin verdiği ölçü dışında);</li>
+<li>Otomatik araçlarla (bot, scraper, crawler) Uygulamaya veya üçüncü taraf veri kaynaklarımıza orantısız yük bindirmek;</li>
+<li>Uygulamayı veya bileşenlerini, Geliştiricinin yazılı izni olmaksızın <strong>ticari amaçla yeniden satmak, kiralamak, alt-lisanslamak</strong>;</li>
+<li>Uygulamayı zararlı yazılım yaymak, kimlik avı yapmak, sahtekarlık veya kara para aklama amacıyla kullanmak;</li>
+<li>Bildirim, yorum veya destek kanallarımızda hakaret, tehdit, ayrımcılık veya yasadışı içerik göndermek.</li>
+</ul>
+<h3>3.4. Cihaz Güvenliği</h3>
+<p>Cihazınızın fiziksel güvenliği (parola, Face ID/Touch ID, ekran kilidi) ve cihazınız üzerinde yetkisiz erişimi engellemek <strong>sizin sorumluluğunuzdadır</strong>. Geliştirici, yetkisiz üçüncü tarafların cihazınıza erişerek Uygulama verilerinizi görüntülemesi, değiştirmesi veya silmesinden sorumlu tutulamaz.</p>
+<hr />
+<h2>4. PREMİUM ABONELİK (PREMİUM YASTIK)</h2>
+<h3>4.1. Abonelik Planları</h3>
+<p>Uygulama, ücretsiz temel sürümün yanı sıra "<strong>Premium Yastık</strong>" adlı ücretli bir abonelik sunar. Sunulan abonelik planları, süreleri ve geçerli fiyatlar <strong>münhasıran App Store satın alma ekranında</strong> kullanıcının ülke para birimi, vergi yapısı ve Apple'ın belirlediği koşullara göre gösterilen tutarlardır. İşbu Koşullarda fiyat veya plan adı zikredilmiş olsa bile, uygulamada o an gösterilen App Store fiyatı <strong>bağlayıcı tek değerdir</strong>.</p>
+<h3>4.2. Otomatik Yenileme — Apple Tarafından Zorunlu Bilgilendirme</h3>
+<blockquote>
+<p>Aşağıdaki hükümler, Apple App Store Review Guidelines bölüm 3.1.2(a) uyarınca <strong>yasal olarak zorunludur</strong> ve abonelik satın almadan önce dikkatlice okunmalıdır.</p>
+</blockquote>
+<ul>
+<li><strong>Ödeme:</strong> Satın alma onaylandığında, ödeme Apple Kimliğinize bağlı ödeme yöntemine <strong>anında</strong> yansıtılır.</li>
+<li><strong>Otomatik Yenileme:</strong> Abonelik, mevcut dönemin <strong>bitiş tarihinden en az 24 saat önce</strong> iptal edilmediği takdirde <strong>otomatik olarak yenilenir</strong>.</li>
+<li><strong>Yenileme Ücreti:</strong> Yenileme ücreti, mevcut dönemin <strong>bitiş tarihinden 24 saat önce</strong> Apple Kimliğinize tahsil edilir ve ücret, satın alınan plan için belirlenen güncel tutar üzerinden alınır.</li>
+<li><strong>Aboneliği Yönetme:</strong> Aboneliğinizi yönetebilir veya iptal edebileceğiniz yer: <strong>iPhone Ayarlar → Apple Kimliğiniz (üst kısım) → Abonelikler → Yastık Altı</strong>. Otomatik yenileme bu ekrandan kapatılır.</li>
+<li><strong>İptal:</strong> İptal, mevcut faturalandırılmış dönemin <strong>sonunda</strong> yürürlüğe girer; iptal sonrasında dönem sonuna kadar Premium özelliklere erişiminiz devam eder.</li>
+<li><strong>Geri Ödeme:</strong> Apple App Store üzerinden yapılan satın alımların geri ödemesi <strong>münhasıran Apple Inc.'in politikalarına tabidir</strong> (https://support.apple.com/tr-tr/HT204084). Geliştirici, App Store satın alımlarına ilişkin geri ödeme talebinizi <strong>onaylama, reddetme veya işleme alma yetkisine sahip değildir.</strong></li>
+</ul>
+<h3>4.3. Ücretsiz Deneme (Varsa)</h3>
+<p>Belirli planlar için ücretsiz deneme süresi sunulduğunda:</p>
+<ul>
+<li>Deneme süresi içinde aboneliği iptal etmezseniz, deneme süresinin sonunda otomatik olarak ücretli aboneliğe <strong>geçiş yapılır</strong> ve ödeme tahsil edilir;</li>
+<li>Bir Apple Kimliği başına genellikle <strong>bir ücretsiz deneme</strong> hakkı tanınır.</li>
+</ul>
+<h3>4.4. Premium Özellikleri</h3>
+<p>Premium abonelik; gümüş takibi, gelişmiş raporlar, sınırsız hedef tanımlama, ek bildirim seçenekleri, fırsat maliyeti analizleri ve gelecekte eklenebilecek diğer premium özelliklere erişim sağlar. Premium kapsamı, bildirim yapılarak değiştirilebilir; <strong>mevcut faturalandırma döneminde ödediğiniz özellikler, o dönem boyunca korunur.</strong></p>
+<h3>4.5. Fiyat Değişiklikleri</h3>
+<p>Geliştirici, abonelik fiyatlarını değiştirme hakkını saklı tutar. Fiyat artışları, <strong>mevcut abonelere yenileme tarihinden en az 30 gün önce</strong> uygun yöntemle (uygulama içi bildirim, e-posta vb.) bildirilir ve Apple'ın geçerli yenileme onayı politikalarına tabidir.</p>
+<hr />
+<h2>5. FİKRİ MÜLKİYET HAKLARI</h2>
+<h3>5.1. Geliştiricinin Hakları</h3>
+<p>Uygulama; tüm kaynak kodu, tasarım, grafik, marka, logo, kullanıcı arayüzü, metinler, ses dosyaları, simgeler, animasyonlar ve diğer içerikler dahil olmak üzere <strong>Geliştiricinin münhasır mülkiyetindedir</strong> ve <strong>5846 sayılı Fikir ve Sanat Eserleri Kanunu</strong>, <strong>6769 sayılı Sınai Mülkiyet Kanunu</strong> ile uluslararası fikri mülkiyet sözleşmeleri kapsamında korunmaktadır.</p>
+<h3>5.2. Lisans Verilmesi</h3>
+<p>İşbu Koşullara uymanız şartıyla, size Uygulamayı <strong>kişisel, ticari olmayan, devredilemez, alt-lisanslanamaz ve geri alınabilir</strong> bir lisans çerçevesinde, sadece sahip olduğunuz veya kontrol ettiğiniz Apple cihazlarda kullanma hakkı verilmektedir. Bu lisans, Apple EULA'nın "Scope of License" bölümüne tabidir.</p>
+<h3>5.3. Kullanıcı İçeriği</h3>
+<p>Uygulamaya girdiğiniz işlem verileri, hedefler ve diğer kişisel kayıtlar ("<strong>Kullanıcı İçeriği</strong>") <strong>size aittir</strong>. Geliştirici, Kullanıcı İçeriği üzerinde mülkiyet iddia etmez. Ancak Uygulamanın çalışması için gerekli olan ölçüde, bu içeriği cihazınızda işlemek, görüntülemek ve hesaplamalarda kullanmak için <strong>gayri münhasır bir lisans</strong> vermiş olursunuz.</p>
+<h3>5.4. Geri Bildirim</h3>
+<p>Uygulamaya ilişkin önerileriniz, geri bildirimleriniz veya iyileştirme fikirleriniz ("<strong>Geri Bildirim</strong>"), Geliştiriciye <strong>karşılıksız, gayri münhasır, dünya çapında ve süresiz</strong> bir lisansla verilmiş sayılır; Geliştirici bu Geri Bildirimi herhangi bir ödeme yükümlülüğü olmaksızın kullanabilir.</p>
+<hr />
+<h2>6. GİZLİLİK VE VERİ KORUMA</h2>
+<h3>6.1. Gizlilik Politikası Referansı</h3>
+<p>Kişisel verilerinizin işlenmesi, <strong>6698 sayılı Kişisel Verilerin Korunması Kanunu</strong> (KVKK) ve geçerli olduğu ölçüde <strong>Avrupa Birliği Genel Veri Koruma Tüzüğü</strong> (GDPR) çerçevesinde, <strong>Gizlilik Politikası</strong>nda detaylandırılmıştır. İşbu Koşulları kabul etmekle Gizlilik Politikasını da kabul etmiş sayılırsınız.</p>
+<h3>6.2. Veri Saklama Yöntemi</h3>
+<p>Uygulama, mevcut sürümünde:</p>
+<ul>
+<li>Tüm portföy ve işlem verilerinizi <strong>yalnızca cihazınızda yerel olarak</strong> saklar;</li>
+<li>Push bildirim altyapısı için Firebase Cloud Messaging (FCM) tarafından üretilen <strong>anonim cihaz token'ı</strong> ile sınırlı veri toplar;</li>
+<li>Anonim kullanım istatistikleri ve çökme raporları toplayabilir.</li>
+</ul>
+<h3>6.3. Üçüncü Taraf Hizmetler</h3>
+<p>Uygulama aşağıdaki üçüncü taraf hizmetlerini kullanır:</p>
+<ul>
+<li><strong>Apple App Store</strong> (dağıtım, ödeme, abonelik yönetimi)</li>
+<li><strong>Apple StoreKit 2</strong> (in-app purchase işleme)</li>
+<li><strong>Firebase Cloud Messaging</strong> (Google Ireland Ltd. — push bildirimler)</li>
+<li><strong>Google Apps Script</strong> (sunucu tarafı bildirim mantığı)</li>
+<li><strong>Üçüncü taraf piyasa veri sağlayıcıları</strong> (altın, gümüş, döviz fiyatları)</li>
+<li><strong>FRED® (Federal Reserve Bank of St. Louis)</strong> — ABD enflasyon (TÜFE) verileri için. Asıl veri kaynağı: U.S. Bureau of Labor Statistics. FRED® ve FRED logosu Federal Reserve Bank of St. Louis'in tescilli markalarıdır. <strong>St. Louis Fed bu Uygulamayı onaylamaz veya desteklemez.</strong> FRED® API'sinin kullanımı, <a href="https://fred.stlouisfed.org/docs/api/terms_of_use.html">FRED® API Kullanım Koşulları</a>'na tabidir.</li>
+</ul>
+<p>Her bir üçüncü taraf hizmetin kendi kullanım koşulları ve gizlilik politikası vardır; bu hizmetleri kullanmakla onların koşullarını da kabul etmiş sayılırsınız.</p>
+<hr />
+<h2>7. GARANTİ REDDİ</h2>
+<h3>7.1. "OLDUĞU GİBİ" Sunulma</h3>
+<p><strong>UYGULAMA, "OLDUĞU GİBİ" VE "MEVCUT OLDUĞU ŞEKLİYLE" SUNULMAKTADIR. GELİŞTİRİCİ, AÇIK VEYA ZIMNİ HİÇBİR GARANTİDE BULUNMAMAKTADIR.</strong> Bu, ticari elverişlilik, belirli bir amaca uygunluk, doğruluk, eksiksizlik, kesintisizlik, hatasızlık ve üçüncü taraf haklarının ihlal edilmemesi garantilerini içerir ancak bunlarla sınırlı değildir.</p>
+<h3>7.2. Geliştiricinin Garanti Etmediği Hususlar</h3>
+<p>Geliştirici özellikle şunları <strong>garanti etmez</strong>:</p>
+<ul>
+<li>Uygulamanın gereksinimlerinizi karşılayacağını;</li>
+<li>Uygulamanın kesintisiz, zamanında, güvenli veya hatasız çalışacağını;</li>
+<li>Piyasa verilerinin <strong>doğru, güncel veya eksiksiz</strong> olduğunu;</li>
+<li>Push bildirimlerin <strong>her zaman zamanında veya hiç teslim edileceğini</strong>;</li>
+<li>Hesaplamaların kullanıcının özel finansal durumunu yansıtacağını;</li>
+<li>Uygulamadaki hataların <strong>düzeltileceğini</strong> veya cihazınız ile uyumlu çalışmaya devam edeceğini;</li>
+<li>Üçüncü taraf hizmetlerinin (App Store, Firebase, veri sağlayıcılar) sürekli erişilebilir olacağını.</li>
+</ul>
+<hr />
+<h2>8. SORUMLULUĞUN SINIRLANDIRILMASI</h2>
+<h3>8.1. Doğrudan Zararlar İçin Sınır</h3>
+<p><strong>YÜRÜRLÜKTEKİ YASALARIN İZİN VERDİĞİ AZAMİ ÖLÇÜDE</strong>, Geliştiricinin Uygulama veya işbu Koşullarla bağlantılı olarak size karşı toplam yükümlülüğü, <strong>(a) son 12 ay içinde Uygulama için ödediğiniz tutar</strong> veya <strong>(b) 50 (elli) ABD Doları</strong> karşılığı tutarın <strong>daha yüksek olanını aşmayacaktır</strong>.</p>
+<h3>8.2. Dolaylı Zararlardan Sorumsuzluk</h3>
+<p>Geliştirici <strong>hiçbir koşulda</strong>:</p>
+<ul>
+<li>Yatırım kararlarınızdan kaynaklanan <strong>finansal kayıplardan</strong> (altın/gümüş alım-satım kararı, fırsat maliyeti, geç kalma vb.);</li>
+<li>Veri kaybı, kâr kaybı, iş kesintisi, itibar kaybı gibi <strong>dolaylı, arızi, özel, cezai veya sonuç olarak doğan zararlardan</strong>;</li>
+<li>Üçüncü taraf veri sağlayıcılarının verdiği <strong>hatalı, gecikmiş veya eksik bilgilerden</strong>;</li>
+<li>Push bildirimlerin <strong>ulaşmamasından veya gecikmesinden</strong> kaynaklanan kararlardan;</li>
+<li>Cihazınızdaki <strong>veri kaybından</strong>, donanım arızasından veya işletim sistemi hatalarından</li>
+</ul>
+<p>sorumlu <strong>tutulamaz</strong>, bu olasılığın önceden bildirilmiş olması halinde dahi.</p>
+<h3>8.3. Temel Kabul</h3>
+<p>Bu sorumluluk sınırlamaları, Geliştirici ile Kullanıcı arasındaki ekonomik dengenin <strong>temel bir unsurudur</strong>; Geliştirici, ücretsiz veya makul bir bedelle Hizmeti bu sınırlamalar olmaksızın sunamayacaktır.</p>
+<hr />
+<h2>9. TAZMİNAT</h2>
+<p>Yürürlükteki yasaların izin verdiği ölçüde, aşağıdakilerden kaynaklanan veya bunlarla bağlantılı olarak Geliştiriciye karşı <strong>üçüncü taraflarca</strong> açılacak tüm dava, talep, yaptırım ve masraflara (makul avukatlık ücretleri dahil) karşı Geliştiriciyi <strong>tazmin etmeyi</strong> kabul edersiniz:</p>
+<ul>
+<li>İşbu Koşulları ihlal etmeniz;</li>
+<li>Uygulamayı yasal olmayan veya yetkisiz kullanımınız;</li>
+<li>Üçüncü tarafların haklarını ihlal etmeniz;</li>
+<li>Uygulamadaki bilgilere dayanarak verdiğiniz finansal veya yatırım kararları.</li>
+</ul>
+<hr />
+<h2>10. ASKIYA ALMA VE SONA ERDİRME</h2>
+<h3>10.1. Geliştiricinin Hakkı</h3>
+<p>Geliştirici, aşağıdaki durumlardan herhangi biri gerçekleştiğinde, <strong>önceden bildirimde bulunmaksızın</strong> size sunulan hizmeti askıya alma, sınırlama veya sona erdirme hakkına sahiptir:</p>
+<ul>
+<li>İşbu Koşulları ihlal etmeniz;</li>
+<li>Yasa dışı, sahtekarlık içeren veya zararlı bir faaliyette bulunmanız;</li>
+<li>Uygulamanın güvenliğini veya bütünlüğünü tehlikeye atmanız;</li>
+<li>Geliştiricinin ticari faaliyetlerini sona erdirmesi.</li>
+</ul>
+<h3>10.2. Kullanıcının Hakkı</h3>
+<p>Uygulamayı <strong>istediğiniz zaman</strong> cihazınızdan kaldırarak Hizmet kullanımına son verebilirsiniz. Aboneliklerin iptali için Bölüm 4.2'deki yönergeleri izleyin.</p>
+<h3>10.3. Sona Ermenin Etkileri</h3>
+<p>Sona erme halinde:</p>
+<ul>
+<li>Uygulamayı kullanma lisansınız <strong>derhal sona erer</strong>;</li>
+<li>Cihazınızdaki yerel verileri silmek sizin sorumluluğunuzdadır;</li>
+<li>İşbu Koşulların doğası gereği sona ermeyi aşacak hükümleri (fikri mülkiyet, sorumluluk sınırı, tazminat, uyuşmazlık çözümü vb.) yürürlükte kalmaya devam eder.</li>
+</ul>
+<hr />
+<h2>11. UYGULAMADA YAPILACAK DEĞİŞİKLİKLER</h2>
+<p>Geliştirici, <strong>kendi takdiri çerçevesinde</strong> Uygulamayı, özelliklerini, fiyat planlarını veya işbu Koşulları herhangi bir zamanda değiştirme, ekleme, kaldırma veya askıya alma hakkını saklı tutar. Esaslı değişiklikler:</p>
+<ul>
+<li>Uygulama içi bildirim, push bildirim veya açılış ekranı duyurusu ile bildirilir;</li>
+<li>Yürürlüğe giriş tarihinden <strong>en az 7 gün önce</strong> duyurulur (zorunlu yasal uyum gerektiren acil değişiklikler hariç);</li>
+<li>Yürürlük tarihinden sonra Uygulamayı kullanmaya devam etmeniz, değiştirilen Koşulları <strong>kabul ettiğiniz</strong> anlamına gelir.</li>
+</ul>
+<p>Değişiklikleri kabul etmiyorsanız, Uygulamayı kullanmayı bırakmanız ve aboneliğinizi iptal etmeniz gerekir.</p>
+<hr />
+<h2>12. APPLE'A ÖZGÜ HÜKÜMLER</h2>
+<blockquote>
+<p>İşbu bölüm, Apple App Store Review Guidelines kapsamında Apple Inc. tarafından zorunlu kılınan hükümleri içerir.</p>
+</blockquote>
+<h3>12.1. Apple ile İlişki</h3>
+<p>Kullanıcı, işbu Koşulların <strong>münhasıran Geliştirici ile Kullanıcı arasında</strong> akdedildiğini, <strong>Apple Inc. ile akdedilmediğini</strong> kabul eder. Apple, Uygulamadan veya içeriğinden <strong>sorumlu değildir</strong>.</p>
+<h3>12.2. Lisans Kapsamı</h3>
+<p>Apple EULA çerçevesinde size verilen Uygulama lisansı, Apple Markalı bir ürün üzerinde kullanılmak üzere <strong>münhasır olmayan</strong> bir lisanstır.</p>
+<h3>12.3. Bakım ve Destek</h3>
+<p>Uygulamaya ilişkin tüm bakım ve destek hizmetlerini sağlama yükümlülüğü <strong>Geliştiriciye aittir</strong>. Apple'ın Uygulamaya ilişkin herhangi bir bakım veya destek yükümlülüğü <strong>yoktur</strong>.</p>
+<h3>12.4. Garanti</h3>
+<p>Apple EULA çerçevesinde geçerli garanti varsa, garanti yükümlülüğü <strong>münhasıran Geliştiriciye aittir</strong>. Uygulamanın geçerli garantilere uymaması halinde Apple'ı bilgilendirebilirsiniz; Apple satın alma bedelini iade edebilir; geçerli yasaların izin verdiği azami ölçüde, Apple'ın Uygulamaya ilişkin başka herhangi bir garanti yükümlülüğü olmayacaktır.</p>
+<h3>12.5. Ürün Talepleri</h3>
+<p>Geliştirici, kullanıcı veya üçüncü tarafların Uygulamaya veya Uygulamayı bulundurma ya da kullanmaya ilişkin taleplerini (ör. ürün sorumluluğu, geçerli yasaya uyumsuzluk, tüketici koruma talepleri, gizlilik talepleri) ele almakla <strong>münhasıran sorumludur</strong>.</p>
+<h3>12.6. Fikri Mülkiyet Talepleri</h3>
+<p>Üçüncü tarafların Uygulamanın kendi fikri mülkiyet haklarını ihlal ettiği iddiası halinde, ilgili talebin soruşturulması, savunulması, çözümü ve tahliyesinden <strong>münhasıran Geliştirici sorumludur</strong>.</p>
+<h3>12.7. Yasal Uyum</h3>
+<p>Uygulamayı kullanırken, kullanıcı kendisinin (i) ABD Hükümeti tarafından "ambargolu" sayılan veya "terör destekçisi ülke" olarak belirlenen bir ülkede bulunmadığını ve (ii) ABD Hükümeti tarafından yasaklı veya kısıtlanmış taraflar listesinde yer almadığını <strong>beyan ve garanti eder</strong>.</p>
+<h3>12.8. Üçüncü Taraf Lehtar</h3>
+<p>Apple ve Apple'ın iştirakleri, işbu Koşulların <strong>üçüncü taraf lehtarlarıdır</strong>; işbu Koşulları kabul etmenizle, Apple, Apple ile ilgili hükümleri size karşı <strong>icra etme hakkına</strong> sahiptir (üçüncü taraf lehtar olarak).</p>
+<hr />
+<h2>13. UYGULANACAK HUKUK VE YETKİ</h2>
+<h3>13.1. Uygulanacak Hukuk</h3>
+<p>İşbu Koşullar, <strong>Türkiye Cumhuriyeti hukukuna</strong> tabidir ve bu hukuka göre yorumlanır. Birleşmiş Milletler Uluslararası Mal Satışı Sözleşmeleri Sözleşmesi (CISG) açıkça <strong>uygulanmayacaktır</strong>.</p>
+<h3>13.2. Yetkili Mahkemeler</h3>
+<p>İşbu Koşullardan veya Uygulamanın kullanımından kaynaklanan veya bunlarla ilgili her türlü uyuşmazlığın çözümünde:</p>
+<ul>
+<li><strong>Tüketici sıfatıyla</strong> Uygulamayı kullanan kullanıcılar için, ikametgâhlarının bulunduğu yerdeki <strong>Tüketici Mahkemeleri</strong> veya <strong>Tüketici Hakem Heyetleri</strong> yetkilidir (6502 sayılı Tüketicinin Korunması Hakkında Kanun çerçevesinde);</li>
+<li>Diğer tüm uyuşmazlıklarda <strong>İstanbul (Çağlayan) Merkez Mahkemeleri ve İcra Daireleri</strong> münhasıran yetkilidir.</li>
+</ul>
+<h3>13.3. Tüketici Hakları Saklıdır</h3>
+<p>İşbu Koşullardaki hiçbir hüküm, <strong>6502 sayılı Tüketicinin Korunması Hakkında Kanun</strong> çerçevesinde tüketicilere tanınan zorunlu hakları sınırlamaz veya ortadan kaldırmaz.</p>
+<hr />
+<h2>14. GENEL HÜKÜMLER</h2>
+<h3>14.1. Bütünlük Sözleşmesi</h3>
+<p>İşbu Koşullar, Apple EULA ve Gizlilik Politikası ile birlikte, Geliştirici ile Kullanıcı arasındaki Uygulama kullanımına ilişkin <strong>tüm sözleşmeyi</strong> oluşturur ve önceki tüm yazılı veya sözlü mutabakatların yerine geçer.</p>
+<h3>14.2. Bölünebilirlik</h3>
+<p>İşbu Koşulların herhangi bir hükmü yetkili bir mahkeme tarafından <strong>geçersiz veya uygulanamaz</strong> bulunursa, söz konusu hüküm Koşulların geri kalan kısmından ayrılır ve Koşulların geri kalanı tam olarak yürürlükte kalmaya devam eder.</p>
+<h3>14.3. Feragat Etmeme</h3>
+<p>Geliştiricinin işbu Koşulların herhangi bir hükmünü uygulama hususundaki herhangi bir gecikmesi veya başarısızlığı, <strong>söz konusu haktan feragat anlamına gelmez</strong>.</p>
+<h3>14.4. Devir</h3>
+<p>Kullanıcı, Geliştiricinin önceden yazılı izni olmaksızın işbu Koşullardaki haklarını veya yükümlülüklerini <strong>devredemez</strong>. Geliştirici, işbu Koşulları herhangi bir zamanda <strong>kısıtlama olmaksızın devredebilir</strong>.</p>
+<h3>14.5. Mücbir Sebep</h3>
+<p>Geliştirici, makul kontrolü dışındaki sebeplerden (doğal afetler, salgın hastalıklar, savaş, terör eylemleri, hükümet kararları, internet altyapısı arızaları, üçüncü taraf hizmet kesintileri vb.) kaynaklanan yükümlülük gecikmelerinden veya başarısızlıklarından <strong>sorumlu tutulamaz</strong>.</p>
+<h3>14.6. Bildirimler</h3>
+<p>Geliştiriciye yönelik her türlü resmi bildirim aşağıdaki e-posta adresi üzerinden yapılmalıdır:</p>
+<blockquote>
+<p><strong>devcinek@gmail.com</strong></p>
+</blockquote>
+<p>Geliştirici tarafından size yapılan bildirimler; uygulama içi bildirim, push bildirim, e-posta veya App Store sayfasındaki güncellemeler aracılığıyla yapılabilir.</p>
+<h3>14.7. Dil</h3>
+<p>İşbu Koşullar Türkçe ve İngilizce olarak yayımlanmıştır. <strong>Çelişki halinde Türkçe metin esastır</strong>.</p>
+<hr />
+<h2>15. İLETİŞİM</h2>
+<p>Sorularınız, talepleriniz veya bildirimleriniz için:</p>
+<ul>
+<li><strong>Geliştirici:</strong> Doğan Cinek</li>
+<li><strong>E-posta:</strong> devcinek@gmail.com</li>
+<li><strong>Uygulama:</strong> Yastık Altı</li>
+</ul>
+<hr />
+<p><strong>İŞBU KULLANIM KOŞULLARINI KABUL ETTİĞİNİZİ BEYAN EDEREK, KOŞULLARI OKUDUĞUNUZU, ANLADIĞINIZI VE BAĞLAYICI BİR SÖZLEŞME OLARAK KABUL ETTİĞİNİZİ TEYİT ETMİŞ OLURSUNUZ.</strong></p>
+    <p class="footer">© 2026 Doğan Cinek — Yastık Altı · dogidem.is.here@gmail.com</p>
+  </main>
+</body>
+</html>

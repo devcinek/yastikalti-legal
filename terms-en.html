@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <title>Yastık Altı — Terms of Use</title>
+  <style>
+:root {
+  color-scheme: light dark;
+  --bg: #FAF7F0;
+  --bg-card: #FFFFFF;
+  --text: #1F2937;
+  --text-muted: #6B7280;
+  --green-dark: #1E563F;
+  --green-light: #2D7A5F;
+  --gold: #C4A94D;
+  --border: #E5E1D6;
+  --code-bg: #F3EFE4;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0F1410;
+    --bg-card: #1A201C;
+    --text: #F2F0EA;
+    --text-muted: #A39F94;
+    --green-dark: #4FA37D;
+    --green-light: #6BBF99;
+    --gold: #D4BC68;
+    --border: #2A302C;
+    --code-bg: #232925;
+  }
+}
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-text-size-adjust: 100%;
+}
+.container {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 20px 80px 20px;
+}
+h1, h2, h3, h4 {
+  font-family: "New York", "Times New Roman", "Georgia", serif;
+  color: var(--green-dark);
+  font-weight: 700;
+  line-height: 1.25;
+  margin-top: 1.6em;
+  margin-bottom: 0.5em;
+}
+h1 {
+  font-size: 28px;
+  border-bottom: 3px solid var(--gold);
+  padding-bottom: 12px;
+  margin-top: 0;
+  text-align: center;
+}
+h2 {
+  font-size: 22px;
+  margin-top: 2em;
+}
+h3 {
+  font-size: 18px;
+  color: var(--green-light);
+}
+h4 {
+  font-size: 16px;
+  color: var(--text);
+}
+p {
+  margin: 0.6em 0;
+}
+strong {
+  color: var(--green-dark);
+  font-weight: 600;
+}
+em { color: var(--text-muted); }
+a {
+  color: var(--green-light);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+a:hover { color: var(--gold); }
+ul, ol { padding-left: 1.4em; }
+li { margin: 0.25em 0; }
+li::marker { color: var(--gold); }
+
+blockquote {
+  border-left: 4px solid var(--gold);
+  background: var(--bg-card);
+  padding: 14px 18px;
+  margin: 1.2em 0;
+  border-radius: 0 10px 10px 0;
+  color: var(--text);
+  font-style: normal;
+}
+blockquote p { margin: 0.4em 0; }
+
+code {
+  background: var(--code-bg);
+  border-radius: 6px;
+  padding: 2px 6px;
+  font-family: "SF Mono", "Menlo", "Monaco", monospace;
+  font-size: 0.9em;
+  color: var(--green-dark);
+}
+pre {
+  background: var(--code-bg);
+  border-radius: 10px;
+  padding: 14px;
+  overflow-x: auto;
+}
+pre code {
+  background: transparent;
+  padding: 0;
+  color: var(--text);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+  font-size: 14.5px;
+  background: var(--bg-card);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 0 var(--border);
+}
+th, td {
+  border: 1px solid var(--border);
+  padding: 10px 12px;
+  text-align: left;
+  vertical-align: top;
+}
+th {
+  background: var(--code-bg);
+  color: var(--green-dark);
+  font-weight: 700;
+  font-family: "New York", "Georgia", serif;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2em 0;
+}
+
+.meta {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 13px;
+  margin-top: -6px;
+  margin-bottom: 24px;
+}
+
+.footer {
+  margin-top: 48px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 13px;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .container { padding: 20px 14px 60px 14px; }
+  h1 { font-size: 24px; }
+  h2 { font-size: 19px; }
+  h3 { font-size: 17px; }
+  body { font-size: 15.5px; }
+  table { font-size: 13.5px; }
+  th, td { padding: 8px 10px; }
+}
+</style>
+</head>
+<body>
+  <main class="container">
+    <h1>YASTIK ALTI — TERMS OF USE</h1>
+<p><strong>Effective Date:</strong> April 25, 2026
+<strong>Last Updated:</strong> April 25, 2026
+<strong>Version:</strong> 1.0</p>
+<hr />
+<h2>1. PARTIES AND SCOPE</h2>
+<h3>1.1. Parties to the Agreement</h3>
+<p>These Terms of Use ("<strong>Terms</strong>" or "<strong>Agreement</strong>") constitute a legally binding agreement between <strong>Doğan Cinek</strong>, an individual developer based in the Republic of Türkiye ("<strong>Developer</strong>", "<strong>we</strong>", "<strong>us</strong>", or "<strong>our</strong>"), and any natural or legal person ("<strong>User</strong>", "<strong>you</strong>", or "<strong>your</strong>") who downloads, installs, registers for, or in any manner uses the <strong>Yastık Altı</strong> mobile application ("<strong>Application</strong>" or "<strong>Service</strong>").</p>
+<h3>1.2. Acceptance of the Agreement</h3>
+<p>By downloading, installing, opening, creating an account on, or otherwise using the Application, you represent that you have read, understood, and <strong>agree to be legally bound</strong> by these Terms. If you do not agree to these Terms, please <strong>do not use, install, and remove the Application from your device</strong>.</p>
+<h3>1.3. Apple End User License Agreement (EULA)</h3>
+<p>These Terms <strong>supplement and incorporate by reference</strong> Apple Inc.'s Standard End User License Agreement applicable to applications distributed through the App Store (https://www.apple.com/legal/internet-services/itunes/dev/stdeula/). In the event of any conflict between the Apple EULA and these Terms, the more restrictive provisions of the Apple EULA shall prevail.</p>
+<h3>1.4. Age Requirement</h3>
+<p>You must be at least <strong>thirteen (13) years of age</strong> and have the legal capacity to enter into these Terms under the laws of your jurisdiction. If you are under 18, you must obtain consent from your parent or legal guardian before using the Application. The Developer reserves the right, without prior notice, to delete the account and data of any user reasonably believed to be a minor.</p>
+<hr />
+<h2>2. PURPOSE AND FUNCTIONS OF THE APPLICATION</h2>
+<h3>2.1. Nature of the Application</h3>
+<p>Yastık Altı is a mobile application designed for <strong>personal tracking and visualization of physical gold and silver investments</strong>. The Application's principal functions include (without limitation):</p>
+<ul>
+<li>Recording and listing user-entered gold/silver purchases;</li>
+<li>Displaying <strong>estimated</strong> portfolio value in TRY and USD based on real-time market data (ounce prices, exchange rates);</li>
+<li>Historical charts, opportunity-cost calculations, budget simulation, and summary reports;</li>
+<li>Goal setting, price-threshold notifications, and daily/weekly summary notifications;</li>
+<li>Widget, lock-screen widget, and Siri shortcut integrations.</li>
+</ul>
+<h3>2.2. <strong>NOT INVESTMENT ADVICE — IMPORTANT NOTICE</strong></h3>
+<blockquote>
+<p><strong>THE APPLICATION DOES NOT PROVIDE INVESTMENT ADVISORY SERVICES UNDER THE TURKISH CAPITAL MARKETS LAW OR ANY EQUIVALENT FOREIGN LEGISLATION.</strong></p>
+</blockquote>
+<p>No information, calculation, chart, report, price data, notification, or recommendation provided by the Application:</p>
+<ul>
+<li>Constitutes <strong>investment advice</strong>, financial advice, tax advice, or legal advice;</li>
+<li>Constitutes a recommendation, solicitation, or inducement to <strong>buy, sell, or hold</strong> gold, silver, foreign currency, or any other asset;</li>
+<li>Is offered as a <strong>licensed service</strong> under any regulatory authority, including the Turkish Capital Markets Board (SPK), the Central Bank of the Republic of Türkiye (TCMB), the U.S. Securities and Exchange Commission (SEC), the Financial Conduct Authority (FCA), or any equivalent body;</li>
+<li>Implies that <strong>past performance is indicative of future results</strong>.</li>
+</ul>
+<p>You must base your investment decisions solely on advice obtained from a licensed investment advisor, financial planner, or authorized institution and conduct your own due diligence. The Developer is not liable for any decision you make in reliance on information displayed in the Application.</p>
+<h3>2.3. Data Sources and Accuracy</h3>
+<p>Market data, exchange rates, and price information are obtained from <strong>third-party data providers</strong>. Such data:</p>
+<ul>
+<li>Is <strong>for informational purposes only</strong> and may be delayed, inaccurate, or incomplete relative to actual market prices;</li>
+<li><strong>May not be used</strong> for official quotation, placing buy/sell orders, or executing financial transactions;</li>
+<li>May be near-real-time but may also be <strong>delayed or interrupted</strong>;</li>
+<li>Is <strong>not warranted</strong> by the Developer as accurate, complete, or timely.</li>
+</ul>
+<p>All profit/loss, portfolio value, goal progress, and similar calculations displayed in the Application are an <strong>automated combination</strong> of user-entered data and third-party market data and <strong>may not reflect real market conditions</strong>.</p>
+<hr />
+<h2>3. ACCOUNT, REGISTRATION, AND USER OBLIGATIONS</h2>
+<h3>3.1. Account Information</h3>
+<p>In its current version, the Application stores all of your data <strong>locally on your device (via SwiftData)</strong>; you do not create a server-side user account. If your device is lost, reset, or wiped, your data <strong>may not be recoverable</strong>. You are responsible for backing up your data regularly (e.g., via iCloud backup).</p>
+<h3>3.2. Accuracy of User-Provided Data</h3>
+<p>The <strong>accuracy, completeness, and timeliness</strong> of all transaction information you enter into the Application (purchase date, gram amount, amount paid, etc.) is <strong>solely your responsibility</strong>. The Developer is not liable for calculation errors, incorrect reports, or inaccurate notifications resulting from incorrect data entry.</p>
+<h3>3.3. Prohibited Uses</h3>
+<p>You may not use the Application to:</p>
+<ul>
+<li>Violate any applicable law, including without limitation the Turkish Penal Code (No. 5237), Capital Markets Law (No. 6362), Anti-Money Laundering Law (No. 5549), the U.S. Computer Fraud and Abuse Act, the EU Digital Services Act, or comparable foreign legislation;</li>
+<li>Infringe the rights of any third party (intellectual property, privacy, personality rights, etc.);</li>
+<li><strong>Reverse-engineer</strong>, copy, modify the compiled code, decompile, or disassemble the Application's source code (except to the extent expressly permitted by applicable law);</li>
+<li>Use automated tools (bots, scrapers, crawlers) to place a disproportionate load on the Application or our third-party data sources;</li>
+<li><strong>Resell, rent, or sublicense</strong> the Application or its components for commercial purposes without the Developer's prior written consent;</li>
+<li>Use the Application to distribute malware, conduct phishing, fraud, or money laundering;</li>
+<li>Submit insulting, threatening, discriminatory, or unlawful content through our notification, comment, or support channels.</li>
+</ul>
+<h3>3.4. Device Security</h3>
+<p>The physical security of your device (passcode, Face ID/Touch ID, screen lock) and prevention of unauthorized access to your device is <strong>your responsibility</strong>. The Developer cannot be held liable for unauthorized third parties accessing your device and viewing, modifying, or deleting your Application data.</p>
+<hr />
+<h2>4. PREMIUM SUBSCRIPTION (PREMIUM YASTIK)</h2>
+<h3>4.1. Subscription Plans</h3>
+<p>The Application offers a free base version alongside a paid subscription called "<strong>Premium Yastık</strong>". Available subscription plans, durations, and applicable prices are those displayed <strong>exclusively on the App Store purchase screen</strong> in the user's country currency, applicable taxes, and conditions determined by Apple. Even if a price or plan name is mentioned in these Terms, the App Store price displayed in the app at the relevant time is the <strong>sole binding amount</strong>.</p>
+<h3>4.2. Auto-Renewal — Apple-Required Disclosures</h3>
+<blockquote>
+<p>The following disclosures are <strong>legally required</strong> under Apple App Store Review Guidelines § 3.1.2(a) and must be read carefully before purchasing a subscription.</p>
+</blockquote>
+<ul>
+<li><strong>Payment:</strong> Payment will be charged to your Apple ID account at confirmation of purchase.</li>
+<li><strong>Auto-Renewal:</strong> The subscription <strong>automatically renews</strong> unless it is canceled at least <strong>24 hours before the end of the current period</strong>.</li>
+<li><strong>Renewal Charge:</strong> Your account will be charged for renewal <strong>within 24 hours prior to the end of the current period</strong>, at the cost of the chosen subscription plan.</li>
+<li><strong>Managing Subscriptions:</strong> Subscriptions may be managed and auto-renewal may be turned off by going to: <strong>iPhone Settings → your Apple ID (top of screen) → Subscriptions → Yastık Altı</strong>.</li>
+<li><strong>Cancellation:</strong> Cancellation takes effect at the <strong>end of the current paid billing period</strong>; you continue to have access to Premium features until that date.</li>
+<li><strong>Refunds:</strong> Refunds for App Store purchases are <strong>governed exclusively by Apple Inc.'s policies</strong> (https://support.apple.com/HT204084). The Developer <strong>has no authority</strong> to approve, deny, or process refund requests for App Store purchases.</li>
+</ul>
+<h3>4.3. Free Trial (If Applicable)</h3>
+<p>Where a free trial period is offered for a particular plan:</p>
+<ul>
+<li>If you do not cancel during the trial, your subscription will <strong>automatically convert</strong> to a paid subscription at the end of the trial and you will be charged;</li>
+<li>Generally, <strong>only one free trial</strong> is offered per Apple ID.</li>
+</ul>
+<h3>4.4. Premium Features</h3>
+<p>The Premium subscription unlocks features such as silver portfolio tracking, advanced reports, unlimited goal-setting, additional notification options, opportunity-cost analyses, and other premium features that may be added in the future. The scope of Premium may be modified upon notice; <strong>features paid for in your current billing period will be preserved through that period</strong>.</p>
+<h3>4.5. Price Changes</h3>
+<p>The Developer reserves the right to change subscription prices. Price increases will be communicated to existing subscribers <strong>at least 30 days before the renewal date</strong> through appropriate means (in-app notification, email, etc.) and are subject to Apple's applicable renewal-consent policies.</p>
+<hr />
+<h2>5. INTELLECTUAL PROPERTY RIGHTS</h2>
+<h3>5.1. Developer's Rights</h3>
+<p>The Application — including all source code, designs, graphics, trademarks, logos, user interface, text, audio files, icons, animations, and other content — is the <strong>exclusive property of the Developer</strong> and is protected under the Turkish Law on Intellectual and Artistic Works (No. 5846), the Industrial Property Law (No. 6769), the U.S. Copyright Act, the Berne Convention, and other applicable international intellectual property treaties.</p>
+<h3>5.2. License Grant</h3>
+<p>Subject to your compliance with these Terms, you are granted a <strong>personal, non-commercial, non-transferable, non-sublicensable, and revocable</strong> license to use the Application solely on Apple-branded devices that you own or control. This license is subject to the "Scope of License" section of the Apple EULA.</p>
+<h3>5.3. User Content</h3>
+<p>The transaction data, goals, and other personal records you enter into the Application ("<strong>User Content</strong>") <strong>belong to you</strong>. The Developer claims no ownership over User Content. However, to the extent necessary for the Application to function, you grant the Developer a <strong>non-exclusive license</strong> to process, display, and use this content for calculations on your device.</p>
+<h3>5.4. Feedback</h3>
+<p>Suggestions, feedback, or improvement ideas regarding the Application ("<strong>Feedback</strong>") shall be deemed granted to the Developer under a <strong>royalty-free, non-exclusive, worldwide, and perpetual license</strong>; the Developer may use such Feedback without any obligation of payment.</p>
+<hr />
+<h2>6. PRIVACY AND DATA PROTECTION</h2>
+<h3>6.1. Privacy Policy Reference</h3>
+<p>The processing of your personal data is detailed in the <strong>Privacy Policy</strong>, in compliance with the Turkish Personal Data Protection Law (KVKK No. 6698), and, where applicable, the <strong>EU General Data Protection Regulation (GDPR)</strong> and the <strong>California Consumer Privacy Act (CCPA)</strong>. By accepting these Terms, you also agree to the Privacy Policy.</p>
+<h3>6.2. Data Storage Method</h3>
+<p>In its current version, the Application:</p>
+<ul>
+<li>Stores all of your portfolio and transaction data <strong>only locally on your device</strong>;</li>
+<li>Collects limited data via Firebase Cloud Messaging (FCM) consisting of an <strong>anonymous device token</strong> for push notification infrastructure;</li>
+<li>May collect anonymous usage statistics and crash reports.</li>
+</ul>
+<h3>6.3. Third-Party Services</h3>
+<p>The Application uses the following third-party services:</p>
+<ul>
+<li><strong>Apple App Store</strong> (distribution, payment, subscription management)</li>
+<li><strong>Apple StoreKit 2</strong> (in-app purchase processing)</li>
+<li><strong>Firebase Cloud Messaging</strong> (Google Ireland Ltd. — push notifications)</li>
+<li><strong>Google Apps Script</strong> (server-side notification logic)</li>
+<li><strong>Third-party market data providers</strong> (gold, silver, currency prices)</li>
+<li><strong>FRED® (Federal Reserve Bank of St. Louis)</strong> — for U.S. inflation (CPI) data. Original source: U.S. Bureau of Labor Statistics. FRED® and the FRED logo are registered trademarks of the Federal Reserve Bank of St. Louis. <strong>The St. Louis Fed does not endorse or sponsor this Application.</strong> Use of the FRED® API is subject to the <a href="https://fred.stlouisfed.org/docs/api/terms_of_use.html">FRED® API Terms of Use</a>.</li>
+</ul>
+<p>Each third-party service has its own terms of use and privacy policy; by using these services, you also agree to be bound by their terms.</p>
+<hr />
+<h2>7. DISCLAIMER OF WARRANTIES</h2>
+<h3>7.1. "AS IS" Provision</h3>
+<p><strong>THE APPLICATION IS PROVIDED "AS IS" AND "AS AVAILABLE". THE DEVELOPER MAKES NO WARRANTIES, EXPRESS OR IMPLIED.</strong> This includes, without limitation, warranties of merchantability, fitness for a particular purpose, accuracy, completeness, uninterrupted operation, error-free performance, and non-infringement of third-party rights.</p>
+<h3>7.2. Items Not Warranted by the Developer</h3>
+<p>In particular, the Developer <strong>does not warrant</strong> that:</p>
+<ul>
+<li>The Application will meet your requirements;</li>
+<li>The Application will operate uninterrupted, on time, securely, or error-free;</li>
+<li>Market data is <strong>accurate, current, or complete</strong>;</li>
+<li>Push notifications will <strong>always be delivered, on time, or at all</strong>;</li>
+<li>Calculations will reflect a user's specific financial situation;</li>
+<li>Bugs in the Application will be <strong>fixed</strong> or that the Application will continue to be compatible with your device;</li>
+<li>Third-party services (App Store, Firebase, data providers) will be continuously available.</li>
+</ul>
+<hr />
+<h2>8. LIMITATION OF LIABILITY</h2>
+<h3>8.1. Cap on Direct Damages</h3>
+<p><strong>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW</strong>, the Developer's total liability to you in connection with the Application or these Terms shall not exceed the <strong>greater of (a) the amount you paid for the Application in the past 12 months</strong> or <strong>(b) USD 50 (fifty US dollars)</strong>.</p>
+<h3>8.2. Exclusion of Indirect Damages</h3>
+<p>The Developer shall <strong>under no circumstances</strong> be liable for:</p>
+<ul>
+<li><strong>Financial losses</strong> resulting from your investment decisions (gold/silver buy-sell decisions, opportunity costs, missed timing, etc.);</li>
+<li><strong>Indirect, incidental, special, punitive, or consequential damages</strong> such as data loss, lost profits, business interruption, or loss of reputation;</li>
+<li><strong>Inaccurate, delayed, or incomplete information</strong> provided by third-party data providers;</li>
+<li>Decisions made due to <strong>non-delivery or delay</strong> of push notifications;</li>
+<li><strong>Data loss</strong> on your device, hardware failure, or operating system errors</li>
+</ul>
+<p>even if previously advised of the possibility of such damages.</p>
+<h3>8.3. Fundamental Allocation</h3>
+<p>These limitations of liability are a <strong>fundamental element</strong> of the economic balance between the Developer and the User; the Developer would not be able to provide the Service free or at a reasonable cost without these limitations.</p>
+<hr />
+<h2>9. INDEMNIFICATION</h2>
+<p>To the extent permitted by applicable law, you agree to <strong>indemnify and hold harmless</strong> the Developer from and against any third-party claims, demands, sanctions, and costs (including reasonable attorneys' fees) arising out of or related to:</p>
+<ul>
+<li>Your breach of these Terms;</li>
+<li>Your unlawful or unauthorized use of the Application;</li>
+<li>Your infringement of any third-party rights;</li>
+<li>Financial or investment decisions you make based on information in the Application.</li>
+</ul>
+<hr />
+<h2>10. SUSPENSION AND TERMINATION</h2>
+<h3>10.1. Developer's Right</h3>
+<p>The Developer reserves the right, <strong>without prior notice</strong>, to suspend, restrict, or terminate the Service provided to you upon any of the following:</p>
+<ul>
+<li>Your breach of these Terms;</li>
+<li>Your engagement in unlawful, fraudulent, or harmful activity;</li>
+<li>Your endangering the security or integrity of the Application;</li>
+<li>The Developer's discontinuation of business operations.</li>
+</ul>
+<h3>10.2. User's Right</h3>
+<p>You may terminate your use of the Service <strong>at any time</strong> by removing the Application from your device. To cancel subscriptions, follow the instructions in Section 4.2.</p>
+<h3>10.3. Effects of Termination</h3>
+<p>Upon termination:</p>
+<ul>
+<li>Your license to use the Application <strong>immediately terminates</strong>;</li>
+<li>You are responsible for deleting local data on your device;</li>
+<li>The provisions of these Terms which by their nature should survive termination (intellectual property, limitations of liability, indemnification, dispute resolution, etc.) shall remain in effect.</li>
+</ul>
+<hr />
+<h2>11. CHANGES TO THE APPLICATION</h2>
+<p>The Developer reserves the right, <strong>at its sole discretion</strong>, to modify, add, remove, or suspend the Application, its features, pricing plans, or these Terms at any time. Material changes will be:</p>
+<ul>
+<li>Communicated via in-app notification, push notification, or splash screen announcement;</li>
+<li>Announced <strong>at least 7 days before</strong> the effective date (except for urgent changes required by mandatory legal compliance);</li>
+<li>Deemed <strong>accepted</strong> by your continued use of the Application after the effective date.</li>
+</ul>
+<p>If you do not agree to the changes, you must stop using the Application and cancel your subscription.</p>
+<hr />
+<h2>12. APPLE-SPECIFIC PROVISIONS</h2>
+<blockquote>
+<p>This section contains provisions mandated by Apple Inc. under the App Store Review Guidelines.</p>
+</blockquote>
+<h3>12.1. Relationship with Apple</h3>
+<p>The User acknowledges that these Terms are entered into <strong>solely between the Developer and the User</strong>, and <strong>not with Apple Inc.</strong> Apple is <strong>not responsible</strong> for the Application or its content.</p>
+<h3>12.2. Scope of License</h3>
+<p>The Application license granted to you under the Apple EULA is a <strong>non-exclusive license</strong> to use the Application on Apple-branded products.</p>
+<h3>12.3. Maintenance and Support</h3>
+<p>The Developer is <strong>solely responsible</strong> for providing all maintenance and support services for the Application. Apple has <strong>no obligation</strong> whatsoever to furnish any maintenance or support services with respect to the Application.</p>
+<h3>12.4. Warranty</h3>
+<p>In the event of any failure of the Application to conform to any applicable warranty under the Apple EULA, you may notify Apple, and Apple will refund the purchase price; to the maximum extent permitted by applicable law, Apple will have <strong>no other warranty obligation</strong> whatsoever with respect to the Application.</p>
+<h3>12.5. Product Claims</h3>
+<p>The Developer is <strong>solely responsible</strong> for addressing any claims by you or any third party relating to the Application or your possession or use of the Application, including but not limited to: (i) product liability claims; (ii) any claim that the Application fails to conform to any applicable legal or regulatory requirement; and (iii) claims arising under consumer protection or privacy legislation.</p>
+<h3>12.6. Intellectual Property Claims</h3>
+<p>In the event a third party alleges that the Application infringes its intellectual property rights, the Developer is <strong>solely responsible</strong> for the investigation, defense, settlement, and discharge of any such claim.</p>
+<h3>12.7. Legal Compliance</h3>
+<p>By using the Application, the User <strong>represents and warrants</strong> that (i) they are not located in a country that is subject to a U.S. Government embargo or that has been designated by the U.S. Government as a "terrorist supporting" country, and (ii) they are not listed on any U.S. Government list of prohibited or restricted parties.</p>
+<h3>12.8. Third-Party Beneficiary</h3>
+<p>The User acknowledges and agrees that Apple and Apple's subsidiaries are <strong>third-party beneficiaries</strong> of these Terms, and that, upon your acceptance, Apple will have the <strong>right (and will be deemed to have accepted the right) to enforce</strong> the Apple-related provisions of these Terms against you as a third-party beneficiary thereof.</p>
+<hr />
+<h2>13. GOVERNING LAW AND JURISDICTION</h2>
+<h3>13.1. Governing Law</h3>
+<p>These Terms shall be governed by and construed in accordance with the <strong>laws of the Republic of Türkiye</strong>, without regard to its conflict of law provisions. The United Nations Convention on Contracts for the International Sale of Goods (CISG) is expressly <strong>excluded</strong>.</p>
+<h3>13.2. Jurisdiction</h3>
+<p>Any disputes arising out of or related to these Terms or your use of the Application shall be resolved as follows:</p>
+<ul>
+<li>For users acting in their <strong>consumer capacity</strong>, the <strong>Consumer Courts</strong> or <strong>Consumer Arbitration Committees</strong> at their place of residence shall have jurisdiction (under the Turkish Consumer Protection Law No. 6502);</li>
+<li>For all other disputes, the <strong>Istanbul (Çağlayan) Central Courts and Enforcement Offices</strong> shall have <strong>exclusive jurisdiction</strong>.</li>
+</ul>
+<h3>13.3. Consumer Rights Reserved</h3>
+<p>Nothing in these Terms shall limit or eliminate the mandatory rights granted to consumers under the <strong>Turkish Consumer Protection Law (No. 6502)</strong>, the EU Consumer Rights Directive, or any equivalent consumer protection legislation in your jurisdiction.</p>
+<hr />
+<h2>14. GENERAL PROVISIONS</h2>
+<h3>14.1. Entire Agreement</h3>
+<p>These Terms, together with the Apple EULA and the Privacy Policy, constitute the <strong>entire agreement</strong> between the Developer and the User concerning the use of the Application and supersede all prior written or oral understandings.</p>
+<h3>14.2. Severability</h3>
+<p>If any provision of these Terms is held by a court of competent jurisdiction to be <strong>invalid or unenforceable</strong>, that provision shall be severed from the remaining Terms, and the remainder of the Terms shall remain in full force and effect.</p>
+<h3>14.3. No Waiver</h3>
+<p>Any delay or failure by the Developer to enforce any provision of these Terms shall <strong>not constitute a waiver</strong> of such right.</p>
+<h3>14.4. Assignment</h3>
+<p>You may <strong>not assign</strong> your rights or obligations under these Terms without the Developer's prior written consent. The Developer may <strong>freely assign</strong> these Terms at any time without restriction.</p>
+<h3>14.5. Force Majeure</h3>
+<p>The Developer shall <strong>not be liable</strong> for delays or failures in performance resulting from causes beyond its reasonable control (natural disasters, pandemics, war, acts of terrorism, government decisions, internet infrastructure failures, third-party service interruptions, etc.).</p>
+<h3>14.6. Notices</h3>
+<p>All formal notices to the Developer should be sent to the following email address:</p>
+<blockquote>
+<p><strong>devcinek@gmail.com</strong></p>
+</blockquote>
+<p>Notices from the Developer to you may be given via in-app notification, push notification, email, or updates posted on the App Store page.</p>
+<h3>14.7. Language</h3>
+<p>These Terms are published in Turkish and English. <strong>In the event of any conflict, the Turkish version shall prevail</strong>.</p>
+<hr />
+<h2>15. CONTACT</h2>
+<p>For questions, requests, or notices:</p>
+<ul>
+<li><strong>Developer:</strong> Doğan Cinek</li>
+<li><strong>Email:</strong> devcinek@gmail.com</li>
+<li><strong>Application:</strong> Yastık Altı</li>
+</ul>
+<hr />
+<p><strong>BY DECLARING YOUR ACCEPTANCE OF THESE TERMS OF USE, YOU CONFIRM THAT YOU HAVE READ, UNDERSTOOD, AND AGREE TO BE LEGALLY BOUND BY THEM.</strong></p>
+    <p class="footer">© 2026 Doğan Cinek — Yastık Altı · dogidem.is.here@gmail.com</p>
+  </main>
+</body>
+</html>
