@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yastık Altı — Gizlilik Politikası</title>
+  <style>
+:root {
+  color-scheme: light dark;
+  --bg: #FAF7F0;
+  --bg-card: #FFFFFF;
+  --text: #1F2937;
+  --text-muted: #6B7280;
+  --green-dark: #1E563F;
+  --green-light: #2D7A5F;
+  --gold: #C4A94D;
+  --border: #E5E1D6;
+  --code-bg: #F3EFE4;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0F1410;
+    --bg-card: #1A201C;
+    --text: #F2F0EA;
+    --text-muted: #A39F94;
+    --green-dark: #4FA37D;
+    --green-light: #6BBF99;
+    --gold: #D4BC68;
+    --border: #2A302C;
+    --code-bg: #232925;
+  }
+}
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-text-size-adjust: 100%;
+}
+.container {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 20px 80px 20px;
+}
+h1, h2, h3, h4 {
+  font-family: "New York", "Times New Roman", "Georgia", serif;
+  color: var(--green-dark);
+  font-weight: 700;
+  line-height: 1.25;
+  margin-top: 1.6em;
+  margin-bottom: 0.5em;
+}
+h1 {
+  font-size: 28px;
+  border-bottom: 3px solid var(--gold);
+  padding-bottom: 12px;
+  margin-top: 0;
+  text-align: center;
+}
+h2 { font-size: 22px; margin-top: 2em; }
+h3 { font-size: 18px; color: var(--green-light); }
+h4 { font-size: 16px; color: var(--text); }
+p { margin: 0.6em 0; }
+strong { color: var(--green-dark); font-weight: 600; }
+em { color: var(--text-muted); }
+a { color: var(--green-light); text-decoration: underline; text-underline-offset: 2px; }
+a:hover { color: var(--gold); }
+ul, ol { padding-left: 1.4em; }
+li { margin: 0.25em 0; }
+li::marker { color: var(--gold); }
+blockquote {
+  border-left: 4px solid var(--gold);
+  background: var(--bg-card);
+  padding: 14px 18px;
+  margin: 1.2em 0;
+  border-radius: 0 10px 10px 0;
+  color: var(--text);
+}
+blockquote p { margin: 0.4em 0; }
+code {
+  background: var(--code-bg);
+  border-radius: 6px;
+  padding: 2px 6px;
+  font-family: "SF Mono", "Menlo", "Monaco", monospace;
+  font-size: 0.9em;
+  color: var(--green-dark);
+}
+pre { background: var(--code-bg); border-radius: 10px; padding: 14px; overflow-x: auto; }
+pre code { background: transparent; padding: 0; color: var(--text); }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+  font-size: 14.5px;
+  background: var(--bg-card);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 0 var(--border);
+}
+th, td { border: 1px solid var(--border); padding: 10px 12px; text-align: left; vertical-align: top; }
+th { background: var(--code-bg); color: var(--green-dark); font-weight: 700; font-family: "New York", "Georgia", serif; }
+hr { border: none; border-top: 1px solid var(--border); margin: 2em 0; }
+.meta { text-align: center; color: var(--text-muted); font-size: 13px; margin-top: -6px; margin-bottom: 24px; }
+.footer { margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--border); color: var(--text-muted); font-size: 13px; text-align: center; }
+.back-link { display: inline-block; margin-bottom: 24px; color: var(--text-muted); font-size: 14px; text-decoration: none; }
+.back-link:hover { color: var(--gold); }
+@media (max-width: 480px) {
+  .container { padding: 20px 14px 60px 14px; }
+  h1 { font-size: 24px; }
+  h2 { font-size: 19px; }
+  h3 { font-size: 17px; }
+  body { font-size: 15.5px; }
+  table { font-size: 13.5px; }
+  th, td { padding: 8px 10px; }
+}
+.doc-grid { display: grid; gap: 12px; margin: 24px 0; }
+.doc-link {
+  display: block;
+  padding: 18px 20px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  text-decoration: none;
+  color: var(--text);
+  transition: border-color 0.15s, transform 0.15s;
+}
+.doc-link:hover { border-color: var(--gold); transform: translateY(-1px); color: var(--text); }
+.doc-link strong { display: block; color: var(--green-dark); font-family: "New York", Georgia, serif; font-size: 17px; }
+.doc-link span { color: var(--text-muted); font-size: 13px; }
+</style>
+</head>
+<body>
+  <main class="container">
+    <a class="back-link" href="index.html">← Ana sayfa</a>
+<h1>YASTIK ALTI — GİZLİLİK POLİTİKASI</h1>
+<p><strong>Yürürlük Tarihi:</strong> 5 Mayıs 2026<br />
+<strong>Son Güncelleme:</strong> 5 Mayıs 2026<br />
+<strong>Sürüm:</strong> 1.1</p>
+<hr />
+<h2>1. GENEL HÜKÜMLER</h2>
+<h3>1.1. Veri Sorumlusu</h3>
+<p>İşbu Gizlilik Politikası ("<strong>Politika</strong>"), <strong>Yastık Altı</strong> mobil uygulaması ("<strong>Uygulama</strong>") ile bağlantılı olarak kişisel verilerinizin nasıl toplandığını, işlendiğini, saklandığını, paylaşıldığını ve korunduğunu açıklamaktadır.</p>
+<ul>
+<li><strong>Veri Sorumlusu:</strong> Doğan Cinek (gerçek kişi geliştirici), Türkiye Cumhuriyeti</li>
+<li><strong>İletişim:</strong> devcinek@gmail.com</li>
+<li><strong>Uygulama:</strong> Yastık Altı (App Store: com.dogancinek.yastikaltin)</li>
+</ul>
+<h3>1.2. Yasal Dayanak</h3>
+<p>İşbu Politika; <strong>6698 sayılı Kişisel Verilerin Korunması Kanunu</strong> ("<strong>KVKK</strong>"), <strong>Avrupa Birliği Genel Veri Koruma Tüzüğü</strong> ("<strong>GDPR</strong>") (geçerli olduğu ölçüde), <strong>California Consumer Privacy Act / California Privacy Rights Act</strong> ("<strong>CCPA/CPRA</strong>") (geçerli olduğu ölçüde) ve <strong>Apple App Store Privacy Requirements</strong> çerçevesinde hazırlanmıştır.</p>
+<h3>1.3. Politikanın Kabulü ve Bağlayıcılığı</h3>
+<p>Uygulamayı indirmeniz, kurmanız, açmanız veya herhangi bir şekilde kullanmanızla, işbu Politikada açıklanan veri işleme faaliyetlerini <strong>okuduğunuzu, anladığınızı, eksiksiz biçimde kabul ettiğinizi ve bu işleme faaliyetlerine açık rıza verdiğinizi</strong> kayıtsız şartsız beyan etmiş olursunuz. Politikayı kabul etmiyorsanız, Uygulamayı kullanmamak ve cihazınızdan kaldırmak yegâne çözüm yolunuzdur. Politikanın yorumlanmasında doğacak her türlü tereddüt, <strong>kullanıcının lehine yorum kuralını dışlayacak şekilde</strong>, Geliştiricinin makul ticari menfaatine ve işbu Politikanın amacına uygun olarak çözülür.</p>
+<h3>1.4. Kapsam</h3>
+<p>İşbu Politika; iOS uygulaması, Apple Watch eşlik uygulaması, ana ekran ve kilit ekranı widget'ları, Live Activity, Siri/App Intents, Multipeer Connectivity ve NearbyInteraction temelli "Altın Günü" özelliği, CloudKit özel veri tabanı senkronizasyonu, CloudKit Aile (paylaşılan) zone'u ve push bildirim altyapısı dahil olmak üzere Uygulamanın <strong>tüm bileşenlerini</strong> kapsar.</p>
+<hr />
+<h2>2. TOPLANAN VERİLER VE TOPLANMA YÖNTEMİ</h2>
+<h3>2.1. <strong>Cihazınızda Yerel Olarak Saklanan Veriler</strong> (Geliştirici Sunucusuna Gönderilmez)</h3>
+<p>Aşağıdaki veriler <strong>yalnızca cihazınızda</strong> SwiftData/CoreData veritabanında ve App Group <code>UserDefaults</code> alanında saklanır; Geliştiricinin kontrolündeki <strong>hiçbir sunucuya gönderilmez</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Veri Kategorisi</th>
+<th>Detay</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Altın işlemleri</strong></td>
+<td>Alım tarihi, gram miktarı, ödenen tutar (TRY/USD), kuyumcu adı (opsiyonel), notlar</td>
+</tr>
+<tr>
+<td><strong>Gümüş işlemleri</strong></td>
+<td>Aynı yapı; gümüş türü (Külçe/925/900/830/Gram), saflık katsayısı, işçilik delta'sı</td>
+</tr>
+<tr>
+<td><strong>Finansal hedefler</strong></td>
+<td>Hedef türü (gram/TL), hedef miktar, başlangıç/bitiş tarihi</td>
+</tr>
+<tr>
+<td><strong>Kullanıcı tercihleri</strong></td>
+<td>Bildirim eşik kuralları (yerel kopya), tema, dil, persona seçimi, kumbara hatırlatıcısı tarihi</td>
+</tr>
+<tr>
+<td><strong>Widget veri kümesi</strong></td>
+<td>Toplam gram, portföy değeri, gram fiyat, USD/TRY kuru — App Group içinde paylaşılır</td>
+</tr>
+<tr>
+<td><strong>OCR/Fiş tarama (varsa)</strong></td>
+<td>Fotoğraf, OCR çıkarımı sonrası <strong>derhal cihazda silinir</strong>; sadece kullanıcının kaydetmeyi seçtiği metin SwiftData kaydına geçer</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Açıklama:</strong> Bu veriler, kullanıcının iCloud yedeklemesi veya CloudKit senkronizasyonu açıksa Apple iCloud altyapısında saklanır (bkz. madde 2.5). Geliştiricinin bu verilere <strong>hiçbir koşulda erişimi yoktur ve kuramaz</strong>; SwiftData kayıtları cihaz/iCloud düzeyinde şifrelenir.</p>
+<h3>2.2. <strong>Sunucu Tarafında Toplanan Veriler</strong> (Sınırlı, Anonim veya Anonimleştirilmiş)</h3>
+<table>
+<thead>
+<tr>
+<th>Veri</th>
+<th>Toplama Sebebi</th>
+<th>Saklama Yeri</th>
+<th>Saklama Süresi</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>FCM Push Bildirim Token'ı</strong></td>
+<td>iOS cihazınıza push bildirim gönderebilmek için Apple/Google tarafından üretilen anonim cihaz tanımlayıcısı</td>
+<td>Firebase Cloud Messaging (Google Ireland Ltd.) + Google Sheets (sadece token)</td>
+<td>Token geçerli olduğu sürece veya kullanıcı bildirim aboneliğini kapatana kadar</td>
+</tr>
+<tr>
+<td><strong>Topic Abonelikleri</strong></td>
+<td><code>gold_daily</code>, <code>silver_daily</code>, <code>all_users</code> topic'lerine abonelik durumu (anonim)</td>
+<td>Firebase Cloud Messaging</td>
+<td>Aktif abonelik süresince</td>
+</tr>
+<tr>
+<td><strong>Eşik Bildirim Tercihleri</strong></td>
+<td>Fiyat/yüzde eşik kuralları (örn. "gram_gold &gt; 4500 TL"); cihaz tanımlayıcısı yok, sadece anonim FCM token ile eşleşir</td>
+<td>Google Sheets (Apps Script)</td>
+<td>Kullanıcı silene kadar</td>
+</tr>
+<tr>
+<td><strong>Live Activity APNs Token</strong></td>
+<td>Dynamic Island ve Live Activity güncellemelerini APNs üzerinden push'lamak için Apple'ın ürettiği ephemerial token</td>
+<td>Firebase Cloud Functions / Realtime Database (Google Ireland Ltd. veya ABD bölgesi)</td>
+<td>Live Activity sona erdiğinde otomatik silinir; en geç <strong>30 gün</strong> içinde</td>
+</tr>
+<tr>
+<td><strong>Live Activity Baseline Snapshot</strong></td>
+<td>Push gönderiminde değişim yüzdesini hesaplamak için kayıt anındaki spot fiyat ve işçilik anlık değeri</td>
+<td>Firebase Realtime Database</td>
+<td>Aktivite sona erene kadar; en geç 30 gün</td>
+</tr>
+<tr>
+<td><strong>Çökme Raporları</strong> <em>(opsiyonel, varsa)</em></td>
+<td>Hata ayıklama için anonim çökme stack trace'leri; kişisel veri içermez</td>
+<td>Apple App Store Connect veya muadili</td>
+<td>90 gün</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Cihaz tanımlayıcısı (IDFA, IDFV) toplanmaz.</strong> Reklam takibi yapılmaz. Geliştirici, bu sunucu kayıtlarından kullanıcının gerçek kimliğini geri çıkaracak hiçbir mekanizma çalıştırmaz.</p>
+<h3>2.3. <strong>Apple Tarafından İşlenen Veriler</strong> (Geliştirici Erişimi Yok)</h3>
+<p>App Store satın alma, abonelik yönetimi, iCloud, CloudKit ve APNs altyapıları çerçevesinde Apple aşağıdaki verileri kendi gizlilik politikası kapsamında işler. Geliştiricinin bu veriler üzerinde <strong>kontrolü, görünürlüğü veya erişimi yoktur</strong>:</p>
+<ul>
+<li>Apple Kimliği e-postası (Geliştiriciye <strong>iletilmez</strong>)</li>
+<li>Ödeme bilgileri (Geliştiriciye <strong>iletilmez</strong>, sadece "Premium aktif/pasif" durum bilgisi)</li>
+<li>StoreKit satın alma makbuzu (sadece doğrulama için)</li>
+<li>Cihaz modeli, iOS sürümü, App Store Connect analytics (anonim)</li>
+<li>iCloud / CloudKit kayıtları (Apple sunucularında, Apple ID'ye bağlı)</li>
+<li>APNs sertifika ve teslimat metadata'sı</li>
+</ul>
+<h3>2.4. <strong>Toplanmayan Veri Kategorileri</strong></h3>
+<p>Aşağıdaki verileri <strong>kesinlikle toplamıyoruz</strong>:</p>
+<ul>
+<li>❌ Ad, soyad, doğum tarihi, T.C. kimlik no</li>
+<li>❌ E-posta adresi (siz bize doğrudan e-posta atmadıkça)</li>
+<li>❌ Telefon numarası</li>
+<li>❌ Açık adres, posta kodu</li>
+<li>❌ Coğrafi konum (GPS, IP bazlı, Wi-Fi tabanlı)</li>
+<li>❌ Mikrofon kaydı (Siri ifadeleri Apple'a gider; Geliştiriciye iletilmez)</li>
+<li>❌ Fotoğraf galerisi (kullanıcı manuel seçim yapmadıkça)</li>
+<li>❌ Rehber, takvim, sağlık verileri</li>
+<li>❌ IDFA, IDFV</li>
+<li>❌ Banka hesabı, kredi kartı bilgileri</li>
+<li>❌ Şifre, biyometrik kimlik bilgileri</li>
+<li>❌ Ses tonu / konuşma örneği / biyometrik ses imzası</li>
+<li>❌ Üçüncü taraflara satılabilecek herhangi bir kişisel bilgi</li>
+</ul>
+<h3>2.5. <strong>iCloud / CloudKit Özel (Private) Veri Tabanı Senkronizasyonu</strong></h3>
+<p>Uygulama, kullanıcının cihazları arasında işlemler ve hedeflerin senkronize edilmesi için <strong>Apple CloudKit Private Database</strong> altyapısını kullanır:</p>
+<ul>
+<li>Senkronizasyon <strong>kullanıcının Apple ID'sine bağlıdır</strong> ve <strong>münhasıran Apple altyapısında</strong> gerçekleşir;</li>
+<li>Geliştiricinin CloudKit Private DB içeriğine <strong>erişimi yoktur ve teknik olarak da imkansızdır</strong>;</li>
+<li>Senkronizasyonun aktif olabilmesi için kullanıcının iOS cihazında iCloud hesabının açık olması, "iCloud Drive" izninin verilmiş olması ve uygulama için iCloud erişiminin kapatılmamış olması gereklidir;</li>
+<li>Senkronizasyon hatalarından, gecikmelerinden, veri tutarsızlıklarından, çakışma çözümünde oluşan kayıplardan veya Apple'ın CloudKit hizmetinin kesintilerinden Geliştirici <strong>sorumlu tutulamaz</strong>;</li>
+<li>Senkronizasyonu kapatmak için: iOS Ayarlar → Apple Kimliğiniz → iCloud → Yastık Altı toggle'ı kapatın. Bu durumda yeni veriler bulut üzerine yazılmaz; mevcut bulut kayıtları Apple'ın iCloud silme politikasına tabidir.</li>
+</ul>
+<h3>2.6. <strong>CloudKit Aile Portföyü (CKShare) — KRİTİK BİLDİRİM</strong></h3>
+<p>Uygulamanın "Aile Portföyü" özelliği, <strong>Apple CloudKit Sharing</strong> (CKShare) altyapısını kullanır. Kullanıcı (ev sahibi) bir paylaşılan zone oluşturup CKShare URL'si üzerinden başka kişileri (davetlileri) davet edebilir.</p>
+<p><strong>Veri Akışı ve Görünürlük:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Görünür Olan</th>
+<th>Kime Görünür</th>
+<th>Kapsam</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Paylaşılan zone'daki tüm işlem kayıtları</td>
+<td>Davet eden + tüm kabul eden katılımcılar</td>
+<td>Gram, ödenen tutar, kuyumcu, notlar dahil</td>
+</tr>
+<tr>
+<td>Paylaşılan hedefler</td>
+<td>Aynı</td>
+<td>Hedef adı, tutar, ilerleme</td>
+</tr>
+<tr>
+<td>Katılımcı görünen ad / Apple ID görünen e-postası</td>
+<td>Davet eden + diğer katılımcılar</td>
+<td>Apple'ın CKShare sistemi tarafından ortaya konur</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Ortak Kontrolör (Joint Controller) Hükmü (KVKK / GDPR):</strong></p>
+<p>Aile Portföyü oluşturan ev sahibi ve daveti kabul eden tüm katılımcılar, paylaşılan veriler bakımından <strong>ortak veri kontrolörü</strong> sıfatını haizdir. Geliştirici, Aile Portföyü içindeki paylaşımlardan, üçüncü taraf katılımcıların eylemlerinden, paylaşılan zone içindeki yanlış/yanıltıcı/hukuka aykırı veri girişlerinden veya katılımcılar arasındaki ihtilaflardan <strong>hiçbir şekilde sorumlu tutulamaz</strong>. Davet eden kullanıcı:</p>
+<ul>
+<li>Davet ettiği tüm katılımcıların <strong>18 yaşının üstünde</strong> olduğunu veya geçerli ebeveyn rızasına sahip olduğunu;</li>
+<li>Davet ettiği katılımcıların işbu Politikayı ve Kullanım Koşullarını kabul ettiklerini;</li>
+<li>Paylaşılan içerikte üçüncü tarafların kişisel verilerinin paylaşılmadığını veya paylaşılıyorsa ilgili kişilerin açık rızasının alındığını</li>
+</ul>
+<p><strong>peşinen beyan, kabul ve taahhüt eder</strong> ve bu beyanın aksinin ortaya çıkması halinde Geliştiriciyi tüm taleplere karşı <strong>tazmin etmeyi</strong> kabul eder (bkz. Kullanım Koşulları, Tazminat hükmü).</p>
+<p><strong>Davetin İptali ve Veri Silme:</strong></p>
+<ul>
+<li>Ev sahibi household'ı silebilir; bu durumda CloudKit zone'u Apple tarafından silinir.</li>
+<li>Davetli, CKShare'i reddedebilir veya kabul ettikten sonra zone'dan ayrılabilir; ancak Apple'ın teknik kısıtları nedeniyle ev sahibi olmadan bir invitee tek başına zone'u silemez.</li>
+<li>Apple altyapısındaki gecikme ve eventual consistency davranışlarından Geliştirici sorumlu değildir.</li>
+</ul>
+<h3>2.7. <strong>Apple Watch + WCSession</strong></h3>
+<p>Uygulamanın watchOS eşlik uygulaması (Yastık Altı Watch App) ve Watch Complications uzantısı, iPhone ile saat arasında veri akışını <strong>yalnızca cihazlar arası yerel WatchConnectivity (WCSession) <code>applicationContext</code></strong> mekanizmasıyla sağlar:</p>
+<ul>
+<li>Senkronize edilen alanlar: gram fiyat, toplam portföy değeri, kâr/zarar yüzdesi, USD/TRY, ons fiyatları, işlem sayısı, son güncelleme zamanı.</li>
+<li><strong>Veri Apple/Geliştirici sunucusuna gönderilmez</strong>; doğrudan saat ↔ telefon bluetooth/wifi yerel kanalı üzerinden iletilir.</li>
+<li>Saat üzerindeki cache (App Group <code>UserDefaults</code>) cihaz silindiğinde temizlenir.</li>
+</ul>
+<h3>2.8. <strong>Live Activity Push Altyapısı</strong></h3>
+<p>Live Activity (Dynamic Island) güncellemeleri için kullanılan veri akışı:</p>
+<ol>
+<li>iOS uygulaması, Apple'ın ürettiği <strong>APNs Live Activity push token</strong>'ını (<a href="Yastık%20Altı/Notifications/LiveActivityTokenUploader.swift">uploader sınıfı</a>) Geliştiricinin Firebase Cloud Functions endpoint'ine HTTPS üzerinden gönderir.</li>
+<li>Cloud Function token'ı Realtime Database'e baseline (kayıt anındaki spot fiyat snapshot'ı) ile birlikte kaydeder.</li>
+<li>Periyodik (10 dakikada bir) zamanlanmış fonksiyon RTDB'den verileri okuyup APNs ES256 JWT ile push gönderir; başarısız token'lar (BadDeviceToken vb.) sessiz şekilde temizlenir.</li>
+<li>Live Activity sona erdiğinde token unregister edilir; en geç <strong>30 gün</strong> içinde otomatik temizlenir.</li>
+</ol>
+<p>Token Apple tarafından üretilmiş anonim bir tanımlayıcı olup tek başına kullanıcı kimliğine eşlenemez. Push gönderiminde ayrıca isim, e-posta, IP veya cihaz parmak izi iletilmez.</p>
+<h3>2.9. <strong>Altın Günü — Multipeer Connectivity, NearbyInteraction, Local Network</strong></h3>
+<p>Uygulamanın "Altın Günü" özelliği, <strong>fiziki olarak yan yana olan</strong> kullanıcıların yüz yüze altın günü (Türk geleneksel altın biriktirme oturumu) gerçekleştirmesini dijitalleştirir. Bu özellik şu izinleri ve teknolojileri gerektirir:</p>
+<ul>
+<li><strong>Local Network (Yerel Ağ) İzni</strong> — Aynı Wi-Fi ağındaki yakındaki cihazları Bonjour servisi ile keşfetmek;</li>
+<li><strong>NSNearbyInteractionUsageDescription (NI)</strong> — UWB destekli cihazlarda yaklaştırma/mesafe ölçümü ile fiziki transferi onaylamak;</li>
+<li><strong>Multipeer Connectivity</strong> — Apple'ın peer-to-peer protokolü; mesajlaşma ve oturum koordinasyonu için.</li>
+</ul>
+<p><strong>Veri Akışı:</strong></p>
+<ul>
+<li>Oturum boyunca kullanıcının seçtiği <strong>takma ad (nickname)</strong>, rastgele atanmış <strong>avatar emojisi</strong>, <strong>gram miktarı</strong>, <strong>işlem zamanı</strong> ve <strong>transfer durumu</strong> sadece o oturumdaki diğer cihazlarla doğrudan paylaşılır.</li>
+<li>Hiçbir veri Geliştirici sunucusuna ya da Apple sunucularına gönderilmez (Apple, MPC trafiğini sadece relay edebilir).</li>
+<li>Oturum sona erdiğinde paylaşılan veriler her cihazın yerel state'inden temizlenir; oturum özet kartı (ekran görüntüsü) kullanıcının kendi galerisinde yer alabilir.</li>
+<li>NI ile ölçülen mesafe verisi cihazda kalır; herhangi bir tarafa iletilmez.</li>
+</ul>
+<p><strong>Kullanıcı Sorumluluğu:</strong> Altın Günü özelliğini kullanan tüm katılımcılar, oturum başlamadan önce işbu Politikayı ve Kullanım Koşullarını kabul etmiş sayılır. Oturumda paylaşılan içerikten ve katılımcılar arası fiziki altın değişiminden Geliştirici <strong>kesinlikle sorumlu değildir</strong>. Uygulamadaki "transfer tamamlandı" ifadesi yalnızca dijital UI bildirimidir; <strong>fiziki altın el değiştirmesi tamamen kullanıcılar arasındaki konudur</strong>.</p>
+<h3>2.10. <strong>Siri / App Intents</strong></h3>
+<p>Uygulama, iOS Siri ve App Shortcuts altyapısı üzerinden sesli sorgu (örn. "Hey Siri, Yastık Altı gram altın") destekler. Bu özelliklerde:</p>
+<ul>
+<li>Kullanıcının ses kaydı <strong>Apple'ın Siri altyapısı</strong> tarafından işlenir; Geliştiriciye iletilmez (Apple Siri Privacy: https://www.apple.com/legal/privacy/data/tr/siri/).</li>
+<li>Intent çalıştığında uygulama, App Group içinde tutulan <strong>anlık portföy/fiyat snapshot'ını</strong> okur; herhangi bir ağ çağrısı yapmaz, hiçbir veri dışarıya gönderilmez.</li>
+<li>Sesli komutla işlem ekleme intent'i çalıştırıldığında veri yalnızca cihazdaki SwiftData / CloudKit altyapısına yazılır.</li>
+</ul>
+<hr />
+<h2>3. VERİLERİN İŞLENME AMAÇLARI VE HUKUKİ DAYANAKLARI</h2>
+<h3>3.1. KVKK Madde 5 / GDPR Madde 6 Çerçevesinde Hukuki Dayanaklar</h3>
+<table>
+<thead>
+<tr>
+<th>Veri</th>
+<th>İşleme Amacı</th>
+<th>Hukuki Dayanak</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Yerel işlem verileri</td>
+<td>Portföy hesaplaması, raporlama</td>
+<td>Sözleşmenin ifası (KVKK 5/2-c, GDPR 6/1-b)</td>
+</tr>
+<tr>
+<td>CloudKit Private Sync</td>
+<td>Kullanıcının kendi cihazları arası senkronizasyon</td>
+<td>Sözleşmenin ifası + açık rıza (KVKK 5/1)</td>
+</tr>
+<tr>
+<td>CKShare Aile Portföyü</td>
+<td>Davetlilerle ortak zone üzerinden veri paylaşımı</td>
+<td>Açık rıza + ortak kontrolör mutabakatı (KVKK 5/1, GDPR 6/1-a + 26)</td>
+</tr>
+<tr>
+<td>Apple Watch WCSession</td>
+<td>Saatte canlı veri görüntüleme</td>
+<td>Sözleşmenin ifası (KVKK 5/2-c, GDPR 6/1-b)</td>
+</tr>
+<tr>
+<td>Live Activity push token</td>
+<td>Dynamic Island / Live Activity güncellemeleri</td>
+<td>Açık rıza (KVKK 5/1, GDPR 6/1-a)</td>
+</tr>
+<tr>
+<td>FCM token + topic + eşik</td>
+<td>Push bildirim teslimi</td>
+<td>Açık rıza (KVKK 5/1, GDPR 6/1-a)</td>
+</tr>
+<tr>
+<td>Multipeer / NI verileri</td>
+<td>P2P altın günü oturumu</td>
+<td>Açık rıza (KVKK 5/1, GDPR 6/1-a)</td>
+</tr>
+<tr>
+<td>Apple satın alma durumu</td>
+<td>Premium özelliklerin aktivasyonu</td>
+<td>Sözleşmenin ifası (KVKK 5/2-c, GDPR 6/1-b)</td>
+</tr>
+<tr>
+<td>Çökme raporları</td>
+<td>Hata ayıklama, ürün iyileştirme</td>
+<td>Meşru menfaat (KVKK 5/2-f, GDPR 6/1-f)</td>
+</tr>
+</tbody>
+</table>
+<h3>3.2. Otomatik Karar Verme ve Profilleme</h3>
+<p>Uygulama, <strong>otomatik karar verme süreçleri kullanmaz</strong> ve kullanıcı profilleme yapmaz. Sell/Buy advisor (RSI/SMA) modülü tarihi fiyatlardan deterministik teknik göstergeler hesaplar; bu göstergeler <strong>kişisel öneri değil, kamuya açık piyasa istatistiklerinden türetilen genel bilgi</strong> mahiyetindedir. Kullanıcı için aleyhe sonuç doğuran otomatik karar mekanizması <strong>bulunmamaktadır</strong>.</p>
+<hr />
+<h2>4. VERİ PAYLAŞIMI VE ÜÇÜNCÜ TARAFLAR</h2>
+<h3>4.1. Üçüncü Taraf Hizmet Sağlayıcıları</h3>
+<table>
+<thead>
+<tr>
+<th>Hizmet</th>
+<th>Sağlayıcı</th>
+<th>İşlenen Veri</th>
+<th>Bulunduğu Konum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>App Store Dağıtım &amp; Ödeme</strong></td>
+<td>Apple Inc. (ABD)</td>
+<td>Apple Kimliği, satın alma makbuzu</td>
+<td>Apple altyapısı, küresel</td>
+</tr>
+<tr>
+<td><strong>iCloud + CloudKit Private/Shared DB</strong></td>
+<td>Apple Inc.</td>
+<td>Kullanıcı veri kayıtları (Apple ID'ye bağlı)</td>
+<td>Apple altyapısı, küresel</td>
+</tr>
+<tr>
+<td><strong>APNs (Live Activity dahil)</strong></td>
+<td>Apple Inc.</td>
+<td>APNs token, push payload (anonim baseline)</td>
+<td>Apple altyapısı</td>
+</tr>
+<tr>
+<td><strong>Push Bildirim</strong></td>
+<td>Google Ireland Ltd. (Firebase Cloud Messaging)</td>
+<td>Anonim FCM token</td>
+<td>AB / ABD veri merkezleri</td>
+</tr>
+<tr>
+<td><strong>Sunucu Mantığı (Apps Script)</strong></td>
+<td>Google LLC</td>
+<td>Token + eşik kuralları (anonim)</td>
+<td>ABD</td>
+</tr>
+<tr>
+<td><strong>Cloud Functions + Realtime DB</strong></td>
+<td>Google LLC / Firebase</td>
+<td>Live Activity token + baseline (anonim)</td>
+<td>ABD veya Avrupa bölgeleri</td>
+</tr>
+<tr>
+<td><strong>Piyasa Verileri</strong></td>
+<td>Üçüncü taraf finansal API sağlayıcıları</td>
+<td>Veri talep IP'si (anonim)</td>
+<td>Çeşitli</td>
+</tr>
+<tr>
+<td><strong>ABD TÜFE (FRED® API)</strong></td>
+<td>U.S. Bureau of Labor Statistics, FRED® (Federal Reserve Bank of St. Louis) aracılığıyla</td>
+<td>Sadece kamuya açık ekonomik gösterge çekilir; kişisel veri paylaşılmaz</td>
+<td>ABD</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>FRED® Atıf:</strong> Uygulama, ABD enflasyon hesaplamalarında FRED® API'sini kullanır. FRED® ve FRED logosu Federal Reserve Bank of St. Louis'in tescilli markalarıdır. St. Louis Fed bu uygulamayı <strong>onaylamamakta veya desteklememektedir</strong>. Asıl veri kaynağı: U.S. Bureau of Labor Statistics (kamuya açık).</p>
+</blockquote>
+<h3>4.2. <strong>Üçüncü Taraflara Veri Satışı / Reklam Paylaşımı: SIFIR</strong></h3>
+<blockquote>
+<p>Geliştirici, kullanıcı verilerini <strong>HİÇBİR ÜÇÜNCÜ TARAFA SATMAZ, KİRALAMAZ, PAYLAŞMAZ veya REKLAM AMACIYLA İŞLEMEZ</strong>.</p>
+</blockquote>
+<p>CCPA/CPRA kapsamındaki "satış" ve "paylaşım" tanımları dahil olmak üzere hiçbir kişisel veri ticari değer karşılığında üçüncü taraflarla paylaşılmaz. ATT (App Tracking Transparency) izni istenmez.</p>
+<h3>4.3. Yasal Yükümlülüklerden Kaynaklı Paylaşım</h3>
+<p>Geliştirici, yalnızca aşağıdaki hallerde verileri yetkili mercilerle paylaşır:</p>
+<ul>
+<li>Türkiye Cumhuriyeti mahkemeleri veya yetkili savcılıklarının yasal taleplerinin gereği;</li>
+<li>Suç gelirlerinin aklanmasının önlenmesi mevzuatı kapsamındaki bildirim yükümlülükleri;</li>
+<li>Kullanıcının veya üçüncü tarafların yaşamına/güvenliğine yönelik <strong>acil ve somut</strong> tehlikenin engellenmesi.</li>
+</ul>
+<p>Geliştirici, gerekli olmadığı halde gönüllü hiçbir veri paylaşımı gerçekleştirmez ve <strong>yargı kararı olmaksızın resmi olmayan kolluk taleplerini reddetme hakkını saklı tutar</strong>.</p>
+<h3>4.4. Yurt Dışına Veri Aktarımı</h3>
+<p>Uygulama, Apple iCloud/CloudKit, Firebase, Google Apps Script ve App Store altyapıları üzerinden <strong>yurt dışında (AB ve ABD)</strong> veri merkezlerini kullanır. Bu aktarımlar:</p>
+<ul>
+<li><strong>GDPR</strong> kapsamında: Standart Sözleşme Hükümleri (SCC) veya Apple/Google'ın sertifikalı uyum mekanizmaları altında gerçekleşir;</li>
+<li><strong>KVKK</strong> kapsamında: Kullanıcının açık rızası ile veya KVKK Kurulu'nun yeterli koruma sağladığını ilan ettiği mekanizmalar üzerinden gerçekleşir.</li>
+</ul>
+<p>Push bildirim aboneliğini, CloudKit senkronizasyonunu, Aile Portföyünü veya Live Activity'yi etkinleştirmenizle, ilgili anonim kayıt/token verilerinin yurt dışına aktarımına <strong>açık ve sarih rıza</strong> vermiş sayılırsınız. Bu rıza her zaman ilgili özelliği kapatarak geri çekilebilir; ancak geri çekme <strong>geçmişe etkili değildir</strong> ve halihazırda gerçekleşmiş işlemleri geçersiz kılmaz.</p>
+<hr />
+<h2>5. ÇOCUKLARIN GİZLİLİĞİ</h2>
+<p>Uygulama <strong>13 yaşın altındaki çocuklara yönelik değildir</strong> ve bilerek 13 yaşın altındaki kullanıcılardan veri toplanmaz.</p>
+<ul>
+<li><strong>COPPA Uyumu (ABD):</strong> 13 yaşın altındaki bir çocuğun verilerini topladığımızı öğrenirsek, bu verileri <strong>derhal sileriz</strong>.</li>
+<li><strong>GDPR / KVKK Uyumu:</strong> 16 yaşın altındaki kullanıcılar için ebeveyn/vasi rızası gereklidir.</li>
+<li><strong>Aile Portföyüne davet edilen bir küçük çocuğun iCloud Family Sharing düzenlemesi</strong>, davet eden ev sahibinin sorumluluğundadır.</li>
+<li>Çocuğunuzun veri sağladığını düşünüyorsanız: <strong>devcinek@gmail.com</strong> adresine bildirin.</li>
+</ul>
+<hr />
+<h2>6. VERİLERİN SAKLANMA SÜRELERİ</h2>
+<table>
+<thead>
+<tr>
+<th>Veri Kategorisi</th>
+<th>Saklama Süresi</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cihaz üzerindeki yerel veriler</td>
+<td>Kullanıcı uygulamayı silene veya verileri manuel temizleyene kadar</td>
+</tr>
+<tr>
+<td>iCloud / CloudKit kayıtları</td>
+<td>Apple'ın iCloud silme politikasına tabi; kullanıcının iCloud'dan elden veya "Manage Storage" ekranından silmesi gerekir</td>
+</tr>
+<tr>
+<td>CKShare paylaşılan zone</td>
+<td>Ev sahibi household'ı silinceye kadar; davetli ayrıldığında erişimi kesilir, kayıtlar zone'da kalır</td>
+</tr>
+<tr>
+<td>FCM Token</td>
+<td>Token geçerli olduğu sürece veya kullanıcı bildirimleri kapatana kadar (en fazla 12 ay inaktiflik sonrası temizlenir)</td>
+</tr>
+<tr>
+<td>Eşik kuralları</td>
+<td>Kullanıcı silene kadar</td>
+</tr>
+<tr>
+<td>Live Activity APNs token + baseline</td>
+<td>Aktivite sona erince; en geç 30 gün</td>
+</tr>
+<tr>
+<td>Multipeer / NI oturum verileri</td>
+<td>Oturum kapanır kapanmaz cihaz hafızasından temizlenir; sunucuya hiç gitmez</td>
+</tr>
+<tr>
+<td>Çökme raporları</td>
+<td>90 gün</td>
+</tr>
+<tr>
+<td>Yasal yükümlülük gereği</td>
+<td>İlgili mevzuatın gerektirdiği süre (örn. ticari defter saklama: 10 yıl)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>7. KULLANICI HAKLARI</h2>
+<h3>7.1. KVKK Kapsamındaki Haklarınız (Madde 11)</h3>
+<p>Veri sahibi olarak Geliştiriciye başvurarak şu haklarınızı kullanabilirsiniz:</p>
+<p>a) Kişisel verilerinizin <strong>işlenip işlenmediğini öğrenme</strong>;<br />
+b) İşlenmişse, buna ilişkin <strong>bilgi talep etme</strong>;<br />
+c) İşlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme;<br />
+ç) Yurt içinde veya yurt dışında aktarıldığı üçüncü kişileri öğrenme;<br />
+d) <strong>Eksik/yanlış işlenmişse düzeltilmesini</strong> isteme;<br />
+e) Yasal süreler bitiminde <strong>silinmesini veya yok edilmesini</strong> talep etme;<br />
+f) (d) ve (e) maddelerine göre yapılan işlemlerin verilerinin aktarıldığı üçüncü kişilere bildirilmesini isteme;<br />
+g) Otomatik sistemler ile analiz edilmesi sonucu aleyhe bir sonuç çıkmasına itiraz etme;<br />
+ğ) Hukuka aykırı işleme nedeniyle zarara uğramışsanız zararın <strong>giderilmesini</strong> talep etme.</p>
+<h3>7.2. GDPR Kapsamındaki Haklarınız</h3>
+<p>Eğer AB/EEA mukimi iseniz, ek olarak:</p>
+<ul>
+<li><strong>Erişim hakkı</strong> (Madde 15)</li>
+<li><strong>Düzeltme hakkı</strong> (Madde 16)</li>
+<li><strong>Silme hakkı / "Unutulma hakkı"</strong> (Madde 17)</li>
+<li><strong>İşlemenin kısıtlanması hakkı</strong> (Madde 18)</li>
+<li><strong>Veri taşınabilirliği hakkı</strong> (Madde 20)</li>
+<li><strong>İtiraz hakkı</strong> (Madde 21)</li>
+<li><strong>Otomatik karara tabi olmama hakkı</strong> (Madde 22)</li>
+<li><strong>Denetim makamına şikâyet hakkı</strong> (KVKK Kurumu için: kvkk.gov.tr)</li>
+</ul>
+<h3>7.3. CCPA/CPRA Kapsamındaki Haklarınız (Kalifornia mukimleri)</h3>
+<ul>
+<li>Toplanan veri kategorilerini bilme hakkı;</li>
+<li>Kişisel verilerinizin silinmesini talep hakkı;</li>
+<li>"Kişisel verilerimi satmayın/paylaşmayın" hakkı (zaten bunlara dayanan paylaşım yapmıyoruz);</li>
+<li>Hassas kişisel verilerin sınırlandırılması hakkı;</li>
+<li>Bu hakları kullandığınız için ayrımcılığa uğramama hakkı.</li>
+</ul>
+<h3>7.4. Hak Kullanım Yöntemi ve Kimlik Doğrulaması</h3>
+<p>Tüm talepler için: <strong>devcinek@gmail.com</strong></p>
+<p>E-postanızda mutlaka şu bilgileri sağlamanız gerekir; aksi takdirde talep, yetersiz bilgi gerekçesiyle <strong>reddedilebilir</strong>:</p>
+<ul>
+<li>Talebin türü (erişim, silme, düzeltme vb.) ve hangi veri kategorisine ilişkin olduğu;</li>
+<li><strong>Kimlik doğrulaması:</strong> cihaz FCM token'ınızın <strong>son 6 hanesi</strong> (Ayarlar → Hakkında → Diagnostics ekranından alabilirsiniz) <strong>veya</strong> App Store satın alma makbuzunuzun ekran görüntüsü;</li>
+<li>İletişim e-posta adresiniz.</li>
+</ul>
+<p>Talebiniz <strong>30 gün içinde</strong> sonuçlandırılır. Talebin haksız, orantısız, tekrar eden veya kötüye kullanılır nitelikte olduğu hallerde KVKK Madde 13/2 ve GDPR Madde 12/5 kapsamında <strong>makul ücret</strong> talep edilebilir veya talep <strong>reddedilebilir</strong>.</p>
+<h3>7.5. Aile Portföyü Verilerine İlişkin Hak Sınırları</h3>
+<p>Aile Portföyü (CKShare) verileri için tek başına Geliştiriciye yapılan silme/düzeltme talepleri, paylaşılan zone'un Apple altyapısında olması ve ortak kontrolör niteliği nedeniyle <strong>teknik olarak sınırlıdır</strong>. İlgili veri için:</p>
+<ul>
+<li>Davetli, kendi katılımını sonlandırabilir (zone'dan çıkma);</li>
+<li>Ev sahibi, household'ın tamamını silerek tüm zone'u kaldırabilir;</li>
+<li>Geliştirici, Apple'ın CloudKit altyapısına müdahale edemez ve bu kapsamda silme talebi Apple'a yönlendirilmelidir.</li>
+</ul>
+<hr />
+<h2>8. VERİ GÜVENLİĞİ</h2>
+<h3>8.1. Teknik Önlemler</h3>
+<ul>
+<li>iOS işletim sisteminin sağladığı <strong>Sandbox</strong> ve <strong>Data Protection</strong> (Class A) mekanizmaları;</li>
+<li>Uygulama içi veriler iOS Keychain ve şifreli SwiftData/SQLite üzerinde tutulur;</li>
+<li>Sunucu iletişimi <strong>HTTPS / TLS 1.2+</strong> zorunludur;</li>
+<li>FCM token aktarımı, Firebase'in TLS şifreli kanalı üzerinden;</li>
+<li>Cloud Functions endpoint'leri yalnızca beklenen payload formatlarını kabul eder;</li>
+<li>APNs push'lar ES256 JWT ile imzalanır;</li>
+<li>Multipeer Connectivity oturumları Apple'ın MCEncryptionRequired moduyla şifrelenir;</li>
+<li>Apps Script erişim logları aktiftir.</li>
+</ul>
+<h3>8.2. İdari Önlemler</h3>
+<ul>
+<li>Geliştirici dışında hiç kimsenin verilere erişimi yoktur;</li>
+<li>Tüm üçüncü taraf hizmet sağlayıcıları, kendi veri işleme sözleşmelerine (Apple DPA, Google DPA) tabidir.</li>
+</ul>
+<h3>8.3. Veri İhlali Bildirimi</h3>
+<p>Bir veri ihlali tespit edilmesi halinde:</p>
+<ul>
+<li>KVKK Madde 12/5 kapsamında <strong>72 saat içinde</strong> KVKK Kurumu'na bildirim yapılır;</li>
+<li>GDPR Madde 33 kapsamında, AB veri öznelerini etkiliyorsa, <strong>72 saat içinde</strong> ilgili denetim makamına bildirim yapılır;</li>
+<li>Etkilenen kullanıcılara, gecikmeksizin uygulama içi bildirim ve/veya basın açıklaması yoluyla duyurulur.</li>
+</ul>
+<h3>8.4. Mücbir Sebep</h3>
+<p>Apple iCloud/CloudKit, Firebase, Apple Watch eşleşmesi, APNs, Multipeer/NI altyapıları gibi üçüncü taraf bileşenlerinin kesintilerinden, hatalarından, veri kayıplarından, sızıntılarından veya bu altyapılara yönelik dış saldırılardan kaynaklı zararlardan Geliştirici <strong>hiçbir surette sorumlu tutulamaz</strong>. Söz konusu bileşenlerin kullanım koşulları ve gizlilik politikaları ilgili sağlayıcılar nezdinde geçerlidir.</p>
+<hr />
+<h2>9. ÇEREZ VE BENZERİ TEKNOLOJİLER</h2>
+<p>Mobil uygulama olduğu için <strong>klasik web çerezi (cookie) kullanılmaz</strong>. Aşağıdaki yerel saklama mekanizmaları kullanılır:</p>
+<table>
+<thead>
+<tr>
+<th>Mekanizma</th>
+<th>Amaç</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>UserDefaults</code></td>
+<td>Uygulama tercihleri (slot seçimleri, bildirim toggle'ları, debug flag'leri)</td>
+</tr>
+<tr>
+<td><code>App Group UserDefaults</code></td>
+<td>Ana uygulama ↔ Widget ↔ Watch veri paylaşımı (<code>group.com.dogancinek.yastikaltin</code>)</td>
+</tr>
+<tr>
+<td><code>SwiftData</code> (CoreData üstü)</td>
+<td>İşlem ve hedef kayıtları</td>
+</tr>
+<tr>
+<td><code>iOS Keychain</code></td>
+<td>(Varsa) hassas tercih verileri</td>
+</tr>
+<tr>
+<td><code>Bundle Resources</code></td>
+<td>Tarihsel fiyat verileri (statik), ses dosyaları</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>10. APPLE ATT (App Tracking Transparency)</h2>
+<p>Uygulama, Apple'ın <strong>App Tracking Transparency</strong> çerçevesi kapsamında <strong>kullanıcı takibi yapmaz</strong>. ATT izin penceresi gösterilmez. IDFA toplanmaz.</p>
+<p>App Store'daki "App Privacy" etiketleri:</p>
+<ul>
+<li>✅ <strong>Data Not Collected</strong> — büyük ölçüde geçerli</li>
+<li>Toplanan: yalnızca <strong>"Diagnostics → Crash Data"</strong> (varsa, anonim) ve <strong>"Identifiers → Device ID"</strong> (FCM/APNs token, kullanıcıyla eşleştirilmez)</li>
+</ul>
+<hr />
+<h2>11. POLİTİKADA YAPILACAK DEĞİŞİKLİKLER</h2>
+<p>Geliştirici, işbu Politikayı zaman zaman güncelleme hakkını saklı tutar. Esaslı değişiklikler:</p>
+<ul>
+<li>Yürürlüğe girmeden <strong>en az 7 gün önce</strong> uygulama içi bildirim ile duyurulur;</li>
+<li>"Son Güncelleme" tarihi yenilenir;</li>
+<li>Materyal değişiklik gerektiren durumlarda (yeni veri kategorisi toplanması, veri paylaşılan üçüncü taraf eklenmesi vb.) <strong>yeniden onay</strong> istenebilir.</li>
+</ul>
+<p>Yürürlük tarihinden sonra Uygulamayı kullanmaya devam etmeniz, güncellenmiş Politikayı <strong>kabul ettiğiniz</strong> anlamına gelir. Herhangi bir değişikliği kabul etmemeniz halinde, yegâne çareniz Uygulamayı kullanmayı bırakmaktır.</p>
+<hr />
+<h2>12. İLETİŞİM VE BAŞVURU</h2>
+<table>
+<thead>
+<tr>
+<th>Konu</th>
+<th>İletişim</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Veri sahibi hakları, KVKK/GDPR/CCPA talepleri</td>
+<td>devcinek@gmail.com</td>
+</tr>
+<tr>
+<td>Genel sorular, ürün desteği</td>
+<td>devcinek@gmail.com</td>
+</tr>
+<tr>
+<td>KVKK denetim makamı</td>
+<td>Kişisel Verileri Koruma Kurumu — www.kvkk.gov.tr</td>
+</tr>
+<tr>
+<td>GDPR denetim makamı</td>
+<td>İkamet ettiğiniz AB üye devletinin Veri Koruma Otoritesi</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>13. DİL VE YORUM KURALI</h2>
+<p>İşbu Politika Türkçe ve İngilizce olarak yayımlanmıştır. <strong>Çelişki halinde Türkçe metin esastır</strong>. İşbu Politikadaki terimlerin yorumlanmasında doğan tereddütler, <strong>kullanıcının lehine yorum kuralının uygulanmasına imkan vermeyecek şekilde</strong>, Geliştiricinin makul ticari menfaati ve Türkiye Cumhuriyeti hukukunun emredici hükümleri çerçevesinde çözümlenir; örnekleyici sayım ifadeleri ("dahil ancak bunlarla sınırlı değildir" gibi) sınırlı yorumlanamaz.</p>
+<hr />
+<p><strong>İŞBU GİZLİLİK POLİTİKASINI KABUL ETTİĞİNİZİ BEYAN EDEREK, KİŞİSEL VERİLERİNİZİN BURADA AÇIKLANAN ŞEKİLDE İŞLENMESİNE AÇIK, ÖZGÜR İRADENİZLE VE BİLGİLENDİRİLMİŞ OLARAK RIZA VERMİŞ SAYILIRSINIZ.</strong></p>
+    <p class="footer">© 2026 Doğan Cinek — Yastık Altı · <a href="mailto:devcinek@gmail.com">devcinek@gmail.com</a></p>
+  </main>
+</body>
+</html>
